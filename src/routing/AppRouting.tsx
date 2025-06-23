@@ -6,3 +6,5 @@ const AppRouting = () => {
     </BrowserRouter>
   );
 };
+
+export default AppRouting;
