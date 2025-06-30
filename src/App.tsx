@@ -1,5 +1,11 @@
+import AppRouting from "./routing/AppRouting";
+
 function App() {
-  return <></>;
+  return (
+    <>
+      <AppRouting />
+    </>
+  );
 }
 
 export default App;
