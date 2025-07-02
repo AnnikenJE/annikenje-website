@@ -1,9 +1,13 @@
-/*:root {
-  --main-font: ;
-}*/
+:root {
+  --first-color: #f2c4c8;
+  --second-color: #f2b6c1;
+  --third-color: #f2d8d8;
+  --fourth-color: #595959;
+  --fifth-color: #f2f2f2;
+}
 
 body {
   margin: 0;
   padding: 0;
-  background-color: #f2f2f2;
+  background-color: var(--first-color);
 }
