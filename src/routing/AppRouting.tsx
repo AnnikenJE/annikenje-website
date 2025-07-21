@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { ContactPage, AboutMePage, HomePage, ProjectsPage } from "../pages";
+import { ContactPage, ExperiencePage, HomePage, ProjectsPage } from "../pages";
 import MainHeader from "../components/shared/MainHeader";
 
 const AppRouting = () => {
@@ -8,7 +8,7 @@ const AppRouting = () => {
       <MainHeader />
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
-        <Route path="/about-me" element={<AboutMePage />}></Route>
+        <Route path="/experience" element={<ExperiencePage />}></Route>
         <Route path="/projects" element={<ProjectsPage />}></Route>
         <Route path="/contact" element={<ContactPage />}></Route>
       </Routes>

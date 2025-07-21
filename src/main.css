@@ -1,13 +1,26 @@
 :root {
-  --first-color: #f2c4c8;
-  --second-color: #f2b6c1;
-  --third-color: #f2d8d8;
-  --fourth-color: #595959;
-  --fifth-color: #f2f2f2;
+  /*
+      Main colors
+  */
+
+  --main-color: #48e1fc;
+
+  --background-color: #595959;
+
+  /*
+      Link color
+  */
+  --link-color: var(--main-color);
+  --link-hover: #3ab1c6;
+
+  /*
+      Fonts
+  */
+  --main-font: "Work Sans", sans-serif;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--first-color);
+  background-color: var(--background-color);
 }

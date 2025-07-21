@@ -5,19 +5,27 @@ import "./MainNavigation.css";
 
 const MainNavigation = () => {
   return (
-    <nav className="navigation-bar">
-      <ul>
+    <nav className="main-navigation">
+      <ul className="main-navigation__list">
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/" className="main-navigation__item">
+            Home
+          </Link>
         </li>
         <li>
-          <Link to="/about-me">About Me</Link>
+          <Link to="/experience" className="main-navigation__item">
+            Experience
+          </Link>
         </li>
         <li>
-          <Link to="/projects">Projects</Link>
+          <Link to="/projects" className="main-navigation__item">
+            Projects
+          </Link>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact" className="main-navigation__item">
+            Contact
+          </Link>
         </li>
       </ul>
     </nav>

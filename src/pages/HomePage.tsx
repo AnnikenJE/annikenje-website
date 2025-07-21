@@ -1,5 +1,10 @@
 const HomePage = () => {
-  return <h1>home</h1>;
+  return (
+    <section>
+      <h1>Anniken</h1>
+      <h3>Frontend and Mobile development Student</h3>
+    </section>
+  );
 };
 
 export default HomePage;
