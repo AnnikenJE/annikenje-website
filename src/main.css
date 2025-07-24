@@ -3,21 +3,17 @@
       Main colors
   */
 
-  --main-color: #8F6CD9;
+  --main-color: #8f6cd9;
   --txt-color: #f6f5fb;
 
-  --background-image: linear-gradient(
-    to bottom right,
-    #190348,
-    #451b7f
-  );
+  --background-image: linear-gradient(to bottom right, #190348, #451b7f);
   --background-color: #140732;
 
   /*
       Link color
   */
   --link-color: var(--main-color);
-  --link-hover: #3ab1c6;
+  --link-hover: #f6f5fb;
 
   /*
       Fonts
