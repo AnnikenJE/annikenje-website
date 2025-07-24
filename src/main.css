@@ -27,7 +27,7 @@
   */
 
   --base-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.2);
-  --txt-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+  --txt-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -35,6 +35,8 @@ body {
   padding: 0;
   background-image: var(--background-image);
   height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 html {
