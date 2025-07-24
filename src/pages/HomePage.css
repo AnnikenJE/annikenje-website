@@ -35,3 +35,33 @@
   margin: 4rem;
   text-align: center;
 }
+
+/*
+    Resolutions
+*/
+
+@media (width < 768px){
+
+    .heading{
+      font-size: 44px;
+    }
+
+    .introduction-section{
+      padding: 1rem;
+    }
+  
+    .social-media-icons{
+      margin: 1rem;
+    }
+
+}
+
+@media (width < 1200px) {
+   .home-main{
+      justify-content: flex-start;
+   }
+
+   .introduction-section{
+      margin: 1rem;
+   }
+}

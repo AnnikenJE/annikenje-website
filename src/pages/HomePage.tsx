@@ -5,9 +5,8 @@ const HomePage = () => {
   return (
     <main className="home-main">
       <section className="introduction-section">
-        <h1 className="heading">
-          HELLO! WEBSITE IS NOT FINISHED - UNDER PROGRESS
-        </h1>
+        <h1 className="heading">HELLO!</h1>
+        <h2 className="introduction"> - OBS!! THIS WEBSITE IS UNDER DEVELOPMENT</h2>
         <h2 className="introduction">
           I'm <span>Anniken </span>\(^-^)/
         </h2>

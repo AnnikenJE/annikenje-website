@@ -24,6 +24,7 @@
   text-decoration: none;
   margin-left: 4rem;
   transition: color 1s ease;
+  text-shadow: var(--txt-shadow);
 }
 
 .main-navigation__item {
@@ -36,6 +37,7 @@
   color: var(--link-color);
   margin-right: 4rem;
   transition: color 0.4s ease;
+  text-shadow: var(--txt-shadow);
 }
 
 /*
@@ -56,4 +58,23 @@
 
 .main-navigation__item:hover {
   color: var(--link-hover);
+}
+
+@media (width < 768px) {
+  .logo {
+    margin: 0rem;
+  }
+
+  .main-navigation {
+    margin-top: 1rem;
+    flex-direction: column;
+  }
+
+  .main-navigation__item {
+    margin: 0;
+  }
+
+  .main-navigation__list {
+    padding: 0;
+  }
 }
