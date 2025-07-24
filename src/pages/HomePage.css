@@ -7,11 +7,11 @@
 }
 
 .introduction-section {
-  border: 4px;
-  border-color: aliceblue;
-  border-style: solid;
-  border-radius: 18px;;
+  border: 1px;
+  border-radius: 18px;
   padding: 2rem;
+  font-family: var(--main-font);
+  letter-spacing: var(--letter-spacing);
 }
 
 /*
@@ -20,12 +20,17 @@
 
 .heading {
   margin: 0;
+  font-weight: 200;
+  color: var(--main-color);
+  font-size: 88px;
 }
 
 .introduction {
+  font-weight: calc(var(--font-weight) * 0.5);
+  color: var(--txt-color);
 }
 
 .social-media-icons {
+  margin: 4rem;
   text-align: center;
-  font-size: 44px;
 }

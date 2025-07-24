@@ -11,19 +11,29 @@
   justify-content: flex-end;
 }
 
+.main-navigation__list li {
+  display: flex;
+  justify-content: center;
+}
+
 .logo {
   padding: 1rem;
-  font-family: var(--logo-font);
-  font-size: 16px;
+  font-family: var(--main-font);
+  font-weight: var(--font-weight);
+  font-size: 32px;
   text-decoration: none;
+  margin-left: 4rem;
 }
 
 .main-navigation__item {
   padding: 1rem;
   font-size: 16px;
   font-family: var(--main-font);
+  font-weight: var(--font-weight);
+  letter-spacing: var(--letter-spacing);
   text-decoration: none;
   color: var(--link-color);
+  margin-right: 4rem;
 }
 
 /*

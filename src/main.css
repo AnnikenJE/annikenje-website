@@ -3,10 +3,15 @@
       Main colors
   */
 
-  --main-color: #48e1fc;
+  --main-color: #8F6CD9;
+  --txt-color: #f6f5fb;
 
-  --background-image: linear-gradient(to bottom right, var(--main-color), rgb(238, 134, 252));
-  --background-color: #595959;
+  --background-image: linear-gradient(
+    to bottom right,
+    #190348,
+    #451b7f
+  );
+  --background-color: #140732;
 
   /*
       Link color
@@ -18,7 +23,8 @@
       Fonts
   */
   --main-font: "Work Sans", sans-serif;
-  --logo-font: "Work Sans", sans-serif;
+  --font-weight: 400;
+  --letter-spacing: 2px;
 
   /*
       Shadows
