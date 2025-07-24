@@ -1,0 +1,15 @@
+.social-media-icons {
+  font-size: 24px;
+}
+
+.social-media-icons a {
+  color: var(--link-color);
+}
+
+.social-media-icons a:visited {
+  color: var(--link-color);
+}
+
+.social-media-icons a:hover {
+  color: var(--link-hover);
+}

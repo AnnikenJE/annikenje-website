@@ -1,6 +1,6 @@
-import HomePage from "./HomePage";
-import ExperiencePage from "./ExperiencePage";
-import ContactPage from "./ContactPage";
-import ProjectsPage from "./ProjectsPage";
+import HomePage from "./HomePage.tsx";
+import AboutPage from "./AboutPage.tsx";
+import ContactPage from "./ContactPage.tsx";
+import ProjectsPage from "./ProjectsPage.tsx";
 
-export { HomePage, ExperiencePage, ContactPage, ProjectsPage };
+export { HomePage, AboutPage, ContactPage, ProjectsPage };

@@ -1,9 +1,21 @@
-.main-navigation__list {
+.main-navigation {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-navigation__list {
+  display: flex;
   list-style: none;
+  justify-content: flex-end;
+}
+
+.logo {
   padding: 1rem;
+  font-family: var(--logo-font);
+  font-size: 16px;
+  text-decoration: none;
 }
 
 .main-navigation__item {
@@ -17,6 +29,14 @@
 /*
    Links
 */
+
+.logo:visited {
+  color: var(--link-color);
+}
+
+.logo:hover {
+  color: var(--link-hover);
+}
 
 .main-navigation__item:visited {
   color: var(--link-color);

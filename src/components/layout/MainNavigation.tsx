@@ -1,20 +1,18 @@
 import { Link } from "react-router-dom";
 import "./MainNavigation.css";
 
-//Home knappen må fjernes, skal ha default side med logo eller lignende
-
 const MainNavigation = () => {
   return (
     <nav className="main-navigation">
+      <div>
+        <Link to="/" className="logo">
+          Anniken
+        </Link>
+      </div>
       <ul className="main-navigation__list">
         <li>
-          <Link to="/" className="main-navigation__item">
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link to="/experience" className="main-navigation__item">
-            Experience
+          <Link to="/about" className="main-navigation__item">
+            About
           </Link>
         </li>
         <li>

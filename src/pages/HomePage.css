@@ -1,0 +1,31 @@
+.home-main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+}
+
+.introduction-section {
+  border: 4px;
+  border-color: aliceblue;
+  border-style: solid;
+  border-radius: 18px;;
+  padding: 2rem;
+}
+
+/*
+    Text and icons
+*/
+
+.heading {
+  margin: 0;
+}
+
+.introduction {
+}
+
+.social-media-icons {
+  text-align: center;
+  font-size: 44px;
+}
