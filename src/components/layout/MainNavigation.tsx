@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import "./MainNavigation.css";
-import SocialMediaIcons from "../icons/SocialMediaIcons";
 
 const MainNavigation = () => {
   return (
