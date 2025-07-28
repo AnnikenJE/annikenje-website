@@ -1,0 +1,12 @@
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.navigation {
+margin: 4rem;
+}
+
+.main-content {
+margin: 4rem;
+}

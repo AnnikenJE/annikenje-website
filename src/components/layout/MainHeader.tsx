@@ -1,5 +1,4 @@
-
-import MainNavigation from "./MainNavigation";
+import MainNavigation from "../navigation/MainNavigation";
 import "./MainHeader.css";
 
 const MainHeader = () => {
