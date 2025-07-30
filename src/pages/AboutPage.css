@@ -24,7 +24,6 @@
   color: var(--main-color);
   letter-spacing: var(--letter-spacing);
   font-weight: var(--font-weight);
-  font-weight: 200px;
   font-size: 36px;
   padding-left: 2rem;
 }
@@ -51,7 +50,7 @@
 .section-heading {
   color: var(--main-color);
   letter-spacing: var(--letter-spacing);
-  font-weight: calc(var(--font-weight) * 0.5);
+  font-weight: var(--font-weight);
   font-size: 24px;
 }
 
@@ -61,14 +60,13 @@
 
 .article-heading {
   color: var(--main-color);
-  letter-spacing: var(--letter-spacing);
-  font-weight: calc(var(--font-weight) * 0.5);
   font-size: 16px;
+  font-weight: var(--font-weight);
 }
 
 .article-info {
   color: var(--txt-color);
-  font-weight: calc(var(--font-weight) * 0.5);
+  font-weight: var(--font-weight);
 }
 
 /*
