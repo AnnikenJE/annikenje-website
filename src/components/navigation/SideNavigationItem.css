@@ -1,0 +1,20 @@
+.item {
+  color: var(--link-color);
+  font-size: 16px;
+  font-family: var(--main-font);
+  font-weight: var(--font-weight);
+  letter-spacing: var(--letter-spacing);
+  transition: all 1s ease;
+  text-decoration: none;
+}
+/*
+   Tips: Må lyse over den som er aktiv     
+*/
+
+.item:visited {
+  color: var(--link-color);
+}
+
+.item:hover {
+  color: var(--link-hover);
+}

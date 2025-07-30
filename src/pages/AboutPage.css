@@ -1,12 +1,76 @@
 .page-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 4fr;
+  scroll-behavior: smooth;
+  align-items: center;
 }
 
 .navigation {
-margin: 4rem;
+  margin: 4rem;
+  position: fixed;
+
+  li {
+    list-style-type: none;
+    padding: 0.5rem;
+  }
 }
 
 .main-content {
-margin: 4rem;
+  display: flex;
+  justify-content: center;
+  font-family: var(--main-font);
+  margin: 1rem;
 }
+
+.about-heading {
+  color: var(--main-color);
+  letter-spacing: var(--letter-spacing);
+  font-weight: var(--font-weight);
+  font-weight: 200px;
+  font-size: 36px;
+  padding-left: 2rem;
+}
+
+.about-wrapper {
+  width: 55%;
+}
+
+/*
+    Section
+*/
+
+.heading-section {
+  margin: 3em;
+}
+
+.about-section {
+  box-shadow: var(--base-shadow);
+  border-radius: 18px;
+  padding: 2rem;
+  margin: 3rem;
+}
+
+.section-heading {
+  color: var(--main-color);
+  letter-spacing: var(--letter-spacing);
+  font-weight: calc(var(--font-weight) * 0.5);
+  font-size: 24px;
+}
+
+/*
+    Article
+*/
+
+.article-heading {
+  color: var(--main-color);
+  letter-spacing: var(--letter-spacing);
+  font-weight: calc(var(--font-weight) * 0.5);
+  font-size: 16px;
+}
+
+.article-info {
+  color: var(--txt-color);
+  font-weight: calc(var(--font-weight) * 0.5);
+}
+
+/*
+    Resolutions
+*/

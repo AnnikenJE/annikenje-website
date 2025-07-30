@@ -6,8 +6,12 @@
   --main-color: #8f6cd9;
   --txt-color: #f6f5fb;
 
-  --background-gradient-image: linear-gradient(to bottom right, #190348, #53416b);
-  --background-color: #140732;
+  --background-gradient-image: linear-gradient(
+    to bottom right,
+    #190348,
+    #53416b
+  );
+  --background-color: #0f032b;
 
   /*
       Link color
@@ -35,8 +39,12 @@ body {
   padding: 0;
   background: var(--background-color);
   height: 100%;
+  overflow-y: scroll;
+  color: var(--txt-color);
 }
 
 html {
   height: 100%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
 }

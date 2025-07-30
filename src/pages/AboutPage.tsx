@@ -6,65 +6,109 @@ import SideNavigationItem from "../components/navigation/SideNavigationItem";
 const AboutPage = () => {
   const navigationItems: ISideNavItem[] = [
     {
-      id: "aboutMe",
-      label: "About me",
+      id: "section1",
+      label: "Background",
     },
-    { id: "education", label: "Education" },
+    { id: "section2", label: "Education" },
     {
-      id: "work",
+      id: "section3",
       label: "Work",
     },
   ];
 
   const listNavigationJSX = () => {
     const JSX = navigationItems.map((item) => (
-      <SideNavigationItem id={item.id} label={item.label} />
+      <SideNavigationItem key={item.id} id={item.id} label={item.label} />
     ));
     return JSX;
   };
 
   const showSideNav = () => {
-    return <ul>{listNavigationJSX()}</ul>;
+    return <ul>{listNavigationJSX()}
+    </ul>;
   };
 
   return (
     <main>
       <div className="page-wrapper">
         <div className="navigation">
-          <section>{showSideNav()}</section>
+          <aside> {showSideNav()}</aside>
         </div>
         <div className="main-content">
-          <section>
-            <h1>About</h1>
-            <article id="aboutMe">
-              <h3>About me</h3>
-              <p>q</p>
-              <p>q</p>
-              <p>q</p>
-              <p>q</p>
-              <p>q</p>
-              <p>q</p>
-              <p>q</p>
-              <p>q</p>
-              <p>q</p>
-              <p>q</p>
-              <p>q</p>
-              <p>q</p>
-              <p>q</p>
-            </article>
-            <article id="education">
-              <h3>Education</h3>
-              <p></p>
-            </article>
-            <article id="work">
-              <h3>Work</h3>
-              <p></p>
-              <p>q</p>
-              <p>q</p>
-              <p>q</p>
-              <p>q</p>
-              <p>q</p>
-            </article>
+          <section className="about-wrapper">
+            <section className="heading-section">
+              <h1 className="about-heading">About</h1>
+            </section>
+
+            <div id="section1">
+              <section className="about-section">
+                <h3 className="section-heading">Background</h3>
+                <article>
+                  <h4 className="article-heading">Who am I?</h4>
+                  <p className="article-info">hei</p>
+                </article>
+              </section>
+            </div>
+            <div id="section2">
+              <section className="about-section">
+                <h3 className="section-heading">Education</h3>
+                <article>
+                  <h4 className="article-heading">Who am I?</h4>
+                  <p className="article-info">hei</p>
+                </article>
+                <p></p>
+                <p>q</p>
+                <p>q</p>
+                <p>q</p>
+                <p>q</p>
+                <p>q</p>
+                <p>q</p>
+                <p>q</p>
+                <p>q</p>
+                <p>q</p>
+                <p>q</p>
+                <p>q</p>
+                <p>q</p> <p>q</p>
+                <p>q</p>
+                <p>q</p>
+                <p>q</p>
+                <p>q</p>
+                <p>q</p>
+                <p>q</p>
+                <p>q</p>
+                <p>q</p>
+                <p>q</p>
+                <p>q</p>
+                <p>q</p>
+              </section>
+            </div>
+            <div id="section3">
+              <section className="about-section">
+                <h3 className="section-heading">Work</h3>
+                <article>
+                  <h4 className="article-heading">Who am I?</h4>
+                  <p className="article-info">hei</p>
+                </article>
+                <p></p>
+                <p>q</p>
+                <p>q</p>
+                <p>q</p>
+                <p>q</p>
+                <p>q</p>
+                <p>q</p>
+                <p>q</p>
+                <p>q</p>
+                <p>q</p>
+                <p>q</p>
+                <p>q</p>
+                <p>q</p>
+                <p>q</p>
+                <p>q</p>
+                <p>q</p>
+                <p>q</p>
+                <p>q</p>
+              </section>
+            </div>
           </section>
         </div>
       </div>

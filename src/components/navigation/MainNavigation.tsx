@@ -1,5 +1,10 @@
 import { Link } from "react-router-dom";
 import "./MainNavigation.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faSquareGithub,
+  faSquareLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 
 const MainNavigation = () => {
   return (
@@ -24,6 +29,25 @@ const MainNavigation = () => {
           <Link to="/contact" className="main-navigation__item">
             Contact
           </Link>
+        </li>
+        <li>
+          {" "}
+          <a
+            href="https://github.com/AnnikenJE"
+            target="_blank"
+            className="main-navigation__item"
+          >
+            <FontAwesomeIcon icon={faSquareGithub} />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/anniken-j%C3%B8rgensen-edvardsen-825160113/"
+            target="_blank"
+            className="main-navigation__item"
+          >
+            <FontAwesomeIcon icon={faSquareLinkedin} />
+          </a>
         </li>
       </ul>
     </nav>

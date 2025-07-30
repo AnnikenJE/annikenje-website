@@ -9,6 +9,7 @@
   display: flex;
   list-style: none;
   justify-content: flex-end;
+  padding-right: 4rem;
 }
 
 .main-navigation__list li {
@@ -28,16 +29,18 @@
 }
 
 .main-navigation__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 1rem;
-  font-size: 16px;
   font-family: var(--main-font);
   font-weight: var(--font-weight);
   letter-spacing: var(--letter-spacing);
   text-decoration: none;
   color: var(--link-color);
-  margin-right: 4rem;
   transition: color 0.4s ease;
   text-shadow: var(--txt-shadow);
+  font-size: large;
 }
 
 /*
@@ -66,7 +69,7 @@
   }
 
   .main-navigation {
-    margin-top: 1rem;
+    padding-top: 1rem;
     flex-direction: column;
   }
 
