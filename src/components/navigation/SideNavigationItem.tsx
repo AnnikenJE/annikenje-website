@@ -1,3 +1,8 @@
+//
+//  Vil få lagt til denne i en egen mappe
+//
+// --------------
+
 import type { FC } from "react";
 import type { ISideNavItem } from "../../interfaces/ISideNavItem";
 import "./SideNavigationItem.css";

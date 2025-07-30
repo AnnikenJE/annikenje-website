@@ -1,3 +1,8 @@
+//
+//  Er ikke fornøyd med disse. Vil fjerne dem og legge dem til i forsiden.
+//
+// --------------
+
 import "./SocialMediaIcons.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

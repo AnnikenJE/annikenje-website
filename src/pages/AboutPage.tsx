@@ -3,6 +3,7 @@ import "./AboutPage.css";
 import type { ISideNavItem } from "../interfaces/ISideNavItem";
 import SideNavigationItem from "../components/navigation/SideNavigationItem";
 
+// Denne burde ha en egen list fil
 const AboutPage = () => {
   const navigationItems: ISideNavItem[] = [
     {
@@ -23,16 +24,13 @@ const AboutPage = () => {
     return JSX;
   };
 
-  const showSideNav = () => {
-    return <ul>{listNavigationJSX()}
-    </ul>;
-  };
-
   return (
     <main>
       <div className="page-wrapper">
         <div className="navigation">
-          <aside> {showSideNav()}</aside>
+          <aside>
+            <ul>{listNavigationJSX()}</ul>
+          </aside>
         </div>
         <div className="main-content">
           <section className="about-wrapper">

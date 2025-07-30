@@ -30,8 +30,7 @@ const MainNavigation = () => {
             Contact
           </Link>
         </li>
-        <li>
-          {" "}
+        <li className="social-link">
           <a
             href="https://github.com/AnnikenJE"
             target="_blank"
@@ -40,7 +39,7 @@ const MainNavigation = () => {
             <FontAwesomeIcon icon={faSquareGithub} />
           </a>
         </li>
-        <li>
+        <li className="social-link">
           <a
             href="https://www.linkedin.com/in/anniken-j%C3%B8rgensen-edvardsen-825160113/"
             target="_blank"

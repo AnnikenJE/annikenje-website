@@ -1,1 +1,4 @@
-// Need links to socials.
+//
+//  Legg til lenker til sosisiale medier, eller annet..
+//
+// --------------

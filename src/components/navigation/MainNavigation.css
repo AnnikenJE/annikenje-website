@@ -1,5 +1,6 @@
 .main-navigation {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -15,6 +16,8 @@
 .main-navigation__list li {
   display: flex;
   justify-content: center;
+  flex: 0 1 auto;
+  align-items: center;
 }
 
 .logo {
@@ -63,21 +66,30 @@
   color: var(--link-hover);
 }
 
+/*
+    Resolution
+*/
+
 @media (width < 768px) {
   .logo {
-    margin: 0rem;
+    margin: 0;
   }
 
   .main-navigation {
+    flex-direction: column;
     padding-top: 1rem;
     flex-direction: column;
   }
 
   .main-navigation__item {
-    margin: 0;
+    padding: 0.5rem;
   }
 
   .main-navigation__list {
     padding: 0;
+  }
+
+  .social-link {
+    justify-content: flex-start;
   }
 }
