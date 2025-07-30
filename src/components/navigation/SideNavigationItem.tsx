@@ -4,7 +4,7 @@ import type { ISideNavItem } from "../../interfaces/ISideNavItem";
 const SideNavigationItem: FC<ISideNavItem> = ({ id, label }) => {
   return (
     <li>
-      <a href={id}>{label}</a>
+      <a href={`#${id}`}>{label}</a>
     </li>
   );
 };

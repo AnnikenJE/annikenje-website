@@ -2,6 +2,7 @@ import "./AboutPage.css";
 import { Link } from "react-router-dom";
 
 import type { ISideNavItem } from "../interfaces/ISideNavItem";
+import SideNavigationItem from "../components/navigation/SideNavigationItem";
 
 const AboutPage = () => {
   const navigationItems: ISideNavItem[] = [
@@ -18,9 +19,7 @@ const AboutPage = () => {
 
   const listNavigationJSX = () => {
     const JSX = navigationItems.map((item) => (
-      <li key={item.id}>
-        <Link to={`#${item.id}`}>{item.label}</Link>
-      </li>
+      <SideNavigationItem id={item.id} label={item.label} />
     ));
     return JSX;
   };
@@ -37,9 +36,36 @@ const AboutPage = () => {
         </div>
         <div className="main-content">
           <section>
-            <article></article>
             <h1>About</h1>
-            <h2>testsection</h2>
+            <article id="aboutMe">
+              <h3>About me</h3>
+              <p>q</p>
+              <p>q</p>
+              <p>q</p>
+              <p>q</p>
+              <p>q</p>
+              <p>q</p>
+              <p>q</p>
+              <p>q</p>
+              <p>q</p>
+              <p>q</p>
+              <p>q</p>
+              <p>q</p>
+              <p>q</p>
+            </article>
+            <article id="education">
+              <h3>Education</h3>
+              <p></p>
+            </article>
+            <article id="work">
+              <h3>Work</h3>
+              <p></p>
+              <p>q</p>
+              <p>q</p>
+              <p>q</p>
+              <p>q</p>
+              <p>q</p>
+            </article>
           </section>
         </div>
       </div>
