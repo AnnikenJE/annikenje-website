@@ -1,5 +1,4 @@
 import "./AboutPage.css";
-import { Link } from "react-router-dom";
 
 import type { ISideNavItem } from "../interfaces/ISideNavItem";
 import SideNavigationItem from "../components/navigation/SideNavigationItem";
