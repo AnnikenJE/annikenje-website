@@ -3,21 +3,22 @@
       Main colors
   */
 
-  --main-color: #8f6cd9;
+  --main-color: #0396A6;
   --txt-color: #f6f5fb;
 
+  /* Kan evt brukes til noe senere */
   --background-gradient-image: linear-gradient(
     to bottom right,
     #190348,
     #53416b
   );
-  --background-color: #0f032b;
+  --background-color: #051326;
 
   /*
       Link color
   */
   --link-color: var(--main-color);
-  --link-hover: #f6f5fb;
+  --link-hover: #30DFF2;
 
   /*
       Fonts
@@ -30,8 +31,8 @@
       Shadows
   */
 
-  --base-shadow: 0px 4px 16px 0px rgba(206, 206, 206, 0.2);
-  --txt-shadow: 2px 2px 3px rgba(249, 249, 249, 0.2);
+  --base-shadow: 0px 4px 16px 0px rgba(3, 150, 166, 0.175);
+  --txt-shadow: 2px 2px 3px rgba(3, 150, 166, 0.175);
 }
 
 body {

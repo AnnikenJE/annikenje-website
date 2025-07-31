@@ -1,3 +1,7 @@
+/*
+    Jeg må få gjort at sosiale medier lenkene går under den andre baren.
+*/
+
 .main-navigation {
   display: flex;
   flex-wrap: wrap;
@@ -46,6 +50,16 @@
   font-size: large;
 }
 
+.nav-item__wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-item__wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
 /*
    Links
 */
@@ -77,16 +91,23 @@
 
   .main-navigation {
     flex-direction: column;
-    padding-top: 1rem;
-    flex-direction: column;
+    padding-top: 0.5rem;
   }
 
   .main-navigation__item {
     padding: 0.5rem;
   }
 
+  .social-item__wrapper {
+    justify-content: center;
+  
+  }
+
   .main-navigation__list {
     padding: 0;
+    flex-direction: column;
+    margin: 0;
+    padding-bottom: 0.5rem;
   }
 
   .social-link {
