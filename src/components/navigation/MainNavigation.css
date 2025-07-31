@@ -1,7 +1,3 @@
-/*
-    Jeg må få gjort at sosiale medier lenkene går under den andre baren.
-*/
-
 .main-navigation {
   display: flex;
   flex-wrap: wrap;
@@ -100,17 +96,12 @@
 
   .social-item__wrapper {
     justify-content: center;
-  
   }
 
   .main-navigation__list {
     padding: 0;
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin: 0;
     padding-bottom: 0.5rem;
-  }
-
-  .social-link {
-    justify-content: flex-start;
   }
 }
