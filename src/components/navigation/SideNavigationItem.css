@@ -18,3 +18,9 @@
 .item:hover {
   color: var(--link-hover);
 }
+
+@media (width < 768px){
+  .item{
+    font-size: 12px;
+  }
+}

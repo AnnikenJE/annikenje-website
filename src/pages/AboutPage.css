@@ -44,7 +44,8 @@
   box-shadow: var(--base-shadow);
   border-radius: 18px;
   padding: 2rem;
-  margin: 3rem;
+  margin: 1rem;
+  margin-bottom: 3rem;
 }
 
 .section-heading {
@@ -66,11 +67,40 @@
 
 .article-info {
   color: var(--txt-color);
-  font-weight: var(--font-weight);
+  font-weight: calc(var(--font-weight) * 0.5);
 }
 
 /*
-    TODO: Resolutions
+     Resolutions
 */
 
+@media (width < 768px) {
+  .about-heading {
+    padding: 0;
+    font-size: 24px;
+    margin: 0;
+  }
 
+  .main-content {
+    margin: 0;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .about-section {
+    margin: 0;
+    padding: 1rem;
+
+    margin-bottom: 1rem;
+  }
+}
+
+@media (width < 992px) {
+  .navigation {
+    margin: 0;
+
+    ul {
+      padding: 0;
+    }
+  }
+}
