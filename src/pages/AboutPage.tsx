@@ -42,7 +42,9 @@ const AboutPage = () => {
 
             <div id="background">
               <section className="about-section">
-                <h3 className="section-heading">Background</h3>
+                <h3 className="section-heading">
+                  Background <hr />
+                </h3>
                 <article>
                   <h4 className="article-heading">Who am I?</h4>
                   <p className="article-info">
@@ -68,7 +70,9 @@ const AboutPage = () => {
             </div>
             <div id="education">
               <section className="about-section">
-                <h3 className="section-heading">Education</h3>
+                <h3 className="section-heading">
+                  Education <hr />
+                </h3>
                 <article>
                   <h4 className="article-heading">Bachelor Degree</h4>
                   <p className="article-info"> Will be added soon!</p>
@@ -81,7 +85,9 @@ const AboutPage = () => {
             </div>
             <div id="work">
               <section className="about-section">
-                <h3 className="section-heading">Work</h3>
+                <h3 className="section-heading">
+                  Work <hr />
+                </h3>
                 <article>
                   <h4 className="article-heading">History</h4>
                   <p className="article-info"> Will be added soon!</p>

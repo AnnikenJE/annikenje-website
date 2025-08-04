@@ -25,7 +25,6 @@
   letter-spacing: var(--letter-spacing);
   font-weight: var(--font-weight);
   font-size: 36px;
-  padding-left: 2rem;
 }
 
 .about-wrapper {
@@ -38,6 +37,12 @@
 
 .heading-section {
   margin: 3em;
+
+  hr {
+    border: none;
+    height: 2px;
+    border-color: var(--main-color);
+  }
 }
 
 .about-section {
@@ -81,24 +86,40 @@
     margin: 0;
   }
 
+  .heading-section {
+    margin: 2rem;
+    margin-left: 1rem;
+    text-align: center;
+  }
+
   .main-content {
     margin: 0;
     width: 100%;
     flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .about-wrapper {
+    width: 80%;
   }
 
   .about-section {
     margin: 0;
-    padding: 1rem;
-
+    padding: 0rem;
+    box-shadow: none;
     margin-bottom: 1rem;
+    margin-left: 1rem;
+  }
+
+  .section-heading {
+    margin: 0;
+    margin-top: 3rem;
   }
 }
 
 @media (width < 992px) {
   .navigation {
     margin: 0;
-
     ul {
       padding: 0;
     }
