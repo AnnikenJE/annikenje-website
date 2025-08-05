@@ -24,6 +24,8 @@
   color: var(--main-color);
   letter-spacing: var(--letter-spacing);
   font-weight: var(--font-weight);
+  font-family: var(--main-font);
+  text-align: center;
   font-size: 36px;
 }
 
@@ -36,8 +38,6 @@
 */
 
 .heading-section {
-  margin: 3em;
-
   hr {
     border: none;
     height: 2px;
@@ -87,7 +87,7 @@
   }
 
   .heading-section {
-    margin: 2rem;
+    margin-top: 2rem;
     margin-left: 1rem;
     text-align: center;
   }

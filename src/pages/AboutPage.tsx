@@ -29,6 +29,9 @@ const AboutPage = () => {
   return (
     <main>
       <div className="page-wrapper">
+        <section className="heading-section">
+          <h1 className="about-heading">About</h1>
+        </section>
         <div className="navigation">
           <aside>
             <ul>{listNavigationJSX()}</ul>
@@ -36,10 +39,6 @@ const AboutPage = () => {
         </div>
         <div className="main-content">
           <section className="about-wrapper">
-            <section className="heading-section">
-              <h1 className="about-heading">About</h1>
-            </section>
-
             <div id="background">
               <section className="about-section">
                 <h3 className="section-heading">
