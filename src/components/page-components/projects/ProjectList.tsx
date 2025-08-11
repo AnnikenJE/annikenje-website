@@ -34,6 +34,12 @@ const ProjectList = () => {
       description: "Tamagotchi-like game",
       status: ProjectStatus.NotStarted,
     },
+    {
+      name: "Donald Trump Merch",
+      description:"Exam in webdevelopment. React + typescript + bootstrap. Exam theme was Donald Trump - this was non political and everyone had to it.",
+      status: ProjectStatus.Completed
+    }
+    
   ];
 
   const showByStatus = (status: ProjectStatus) =>
