@@ -1,4 +1,4 @@
-import ProjectList from "../components/page-components/projects/projectList";
+import ProjectList from "../components/page-components/projects/ProjectList";
 import "./ProjectPage.css";
 
 const ProjectsPage = () => {
