@@ -1,6 +1,6 @@
 import type { FC } from "react";
 import type { IProjectItem } from "../../../interfaces/IProjectItem";
-import "./projectListItem.css";
+import "./ProjectListItem.css";
 
 const ProjectListItem: FC<IProjectItem> = ({ name, description }) => {
   return (

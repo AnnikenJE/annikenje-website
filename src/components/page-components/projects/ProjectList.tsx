@@ -2,7 +2,7 @@ import {
   ProjectStatus,
   type IProjectItem,
 } from "../../../interfaces/IProjectItem";
-import ProjectListItem from "./projectListItem";
+import ProjectListItem from "./ProjectListItem";
 
 /* TODO: write more on description etc. Ta med lenke til beskrivelse fagene kanskje*/
 
@@ -36,10 +36,10 @@ const ProjectList = () => {
     },
     {
       name: "Donald Trump Merch",
-      description:"Exam in webdevelopment. React + typescript + bootstrap. Exam theme was Donald Trump - this was non political and everyone had to it.",
-      status: ProjectStatus.Completed
-    }
-    
+      description:
+        "Exam in webdevelopment. React + typescript + bootstrap. Exam theme was Donald Trump - this was non political and everyone had to it.",
+      status: ProjectStatus.Completed,
+    },
   ];
 
   const showByStatus = (status: ProjectStatus) =>
@@ -51,12 +51,14 @@ const ProjectList = () => {
     <div className="projects-sections__wrapper">
       <section>
         <h2>In progress</h2>
+        {showByStatus(ProjectStatus.InProgress)}
       </section>
-      {showByStatus(ProjectStatus.InProgress)}
+
       <section>
         <h2>Completed</h2>
+        {showByStatus(ProjectStatus.Completed)}
       </section>
-      {showByStatus(ProjectStatus.Completed)}
+
       <section>
         <h2>Not started</h2>
         {showByStatus(ProjectStatus.NotStarted)}

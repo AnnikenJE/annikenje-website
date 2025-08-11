@@ -1,5 +1,5 @@
 import ProjectList from "../components/page-components/projects/projectList";
-import "./projectPage.css";
+import "./ProjectPage.css";
 
 const ProjectsPage = () => {
   return (
