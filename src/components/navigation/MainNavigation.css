@@ -29,6 +29,7 @@
   margin-left: 4rem;
   transition: all 1s ease;
   text-shadow: var(--txt-shadow);
+  color: var(--link-color);
 }
 
 .main-navigation__item {
