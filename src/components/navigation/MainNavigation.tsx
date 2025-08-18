@@ -9,7 +9,7 @@ import {
 const MainNavigation = () => {
   return (
     <nav className="main-navigation">
-      <div>
+      <div className="logo__wrapper">
         <Link to="/" className="logo">
           Anniken
         </Link>

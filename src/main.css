@@ -3,15 +3,10 @@
       Main colors
   */
 
-  --main-color: #8F6CD9;
+  --main-color: #D996C7;
   --txt-color: #f6f5fb;
 
-  --background-gradient-image: linear-gradient(
-    to bottom right,
-    #150140,
-    #340773
-  );
-  --background-color:#2b0f41;
+  --background-color: #0A0626;
 
   /*
       Link color
@@ -30,7 +25,7 @@
       Shadows
   */
 
-  --base-shadow: 0px 4px 16px 0px rgba(143, 108, 217, 0.2);
+  --base-shadow: 0px 4px 16px 0px rgba(121, 75, 132, 0.2);
   --txt-shadow: 2px 2px 3px rgba(143, 108, 217, 0.1);
 }
 
