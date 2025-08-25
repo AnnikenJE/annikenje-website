@@ -14,7 +14,7 @@ const HomePage = () => {
             A student currently pursuing a Bachelor's degree in Frontend and
             Mobile Development.
           </p>
-          <p>Feel free to check out my github and linkedin too!</p>
+          <p>Feel free to check out my GitHub or contact me on LinkedIn.</p>
         </article>
 
         <SocialMediaIcons />
