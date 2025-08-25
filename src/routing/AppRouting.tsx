@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { ContactPage, AboutPage, HomePage, ProjectsPage } from "../pages";
+import { AboutPage, HomePage, ProjectsPage } from "../pages";
 import MainHeader from "../components/layout/MainHeader";
 
 const AppRouting = () => {
@@ -10,7 +10,6 @@ const AppRouting = () => {
         <Route path="/" element={<HomePage />}></Route>
         <Route path="/about" element={<AboutPage />}></Route>
         <Route path="/projects" element={<ProjectsPage />}></Route>
-        <Route path="/contact" element={<ContactPage />}></Route>
       </Routes>
     </BrowserRouter>
   );

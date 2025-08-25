@@ -26,11 +26,6 @@ const MainNavigation = () => {
               Projects
             </Link>
           </li>
-          <li>
-            <Link to="/contact" className="main-navigation__item">
-              Contact
-            </Link>
-          </li>
         </div>
         <div className="social-item__wrapper">
           <li className="social-link">
