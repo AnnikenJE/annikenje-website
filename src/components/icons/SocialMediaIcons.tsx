@@ -1,5 +1,5 @@
 //
-//  Er ikke fornøyd med disse. Vil fjerne dem og legge dem til i forsiden.
+//  Er ikke fornøyd med disse. Vil fjerne dem og legge dem til i forsiden og slette dene.
 //
 // --------------
 

@@ -20,16 +20,6 @@ const ProjectList = () => {
       url: "https://www.thelionhearts.eu/",
     },
     {
-      name: "Welcome to Las Vegas",
-      description: "Exam in creative webproject",
-      status: ProjectStatus.Completed,
-    },
-    {
-      name: "Alice in wonderland",
-      description: "Course requirement in creative webproject",
-      status: ProjectStatus.Completed,
-    },
-    {
       name: "Pet game",
       description: "Tamagotchi-like game",
       status: ProjectStatus.NotStarted,

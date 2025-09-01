@@ -22,7 +22,6 @@
 
 .logo {
   padding: 1rem;
-  font-family: var(--main-font);
   font-weight: calc(var(--font-weight) * 0.5);
   font-size: 32px;
   text-decoration: none;

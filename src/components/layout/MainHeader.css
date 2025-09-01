@@ -1,6 +1,4 @@
 .main-header {
-  box-shadow: var(--base-shadow);
   position: sticky;
   top: 0;
-  background-color: var(--background-color);
 }

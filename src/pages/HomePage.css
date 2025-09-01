@@ -21,18 +21,14 @@
 
 .heading {
   margin: 0;
-  font-weight: 200;
+  font-weight: var(--font-weight);
   color: var(--main-color);
   font-size: 88px;
-}
-
-.introduction {
-  font-weight: ar(--font-weight);
-  color: var(--txt-color);
+  font-weight: calc(var(--font-weight) * 0.5);
 }
 
 .article__heading {
-  font-weight: calc(var(--font-weight) * 0.6);
+  font-weight: calc(var(--font-weight) * 0.5);
 }
 
 .social-media-icons {
@@ -40,8 +36,8 @@
   text-align: center;
 }
 
-.warning{
-text-decoration: underline;
+.warning {
+  text-decoration: underline;
 }
 
 /*
