@@ -6,6 +6,18 @@
   font-size: 36px;
 }
 
+.about-section {
+  border: 1px;
+  border-radius: 18px;
+  padding: 2rem;
+  font-family: var(--main-font);
+  letter-spacing: var(--letter-spacing);
+  margin: 10rem;
+  background-color: var(--secondary-background-color);
+}
+
+
+
 /*
      Resolutions
 */

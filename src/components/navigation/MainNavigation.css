@@ -22,7 +22,7 @@
 
 .logo {
   padding: 1rem;
-  font-weight: calc(var(--font-weight) * 0.5);
+  font-weight: calc(var(--font-weight) * 0.8);
   font-size: 32px;
   text-decoration: none;
   margin-left: 4rem;
@@ -91,11 +91,11 @@
 
   .main-navigation {
     flex-direction: column;
-    padding-top: 0.5rem;
+    padding-top: 1rem;
   }
 
   .main-navigation__item {
-    padding: 0.5rem;
+    padding: rem;
   }
 
   .social-item__wrapper {
@@ -103,9 +103,15 @@
   }
 
   .main-navigation__list {
+    display: flex;
     padding: 0;
     flex-direction: column-reverse;
     margin: 0;
     padding-bottom: 0.5rem;
+    width: 100%;
+  }
+
+  .nav-item__wrapper{
+    justify-content:space-evenly;
   }
 }

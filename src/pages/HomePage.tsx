@@ -9,14 +9,11 @@ const HomePage = () => {
 
         <article className="intrduction">
           <h2 className="article__heading">I'm Anniken \(^-^)/</h2>
-          <h3 className="warning">
-            THIS WEBSITE IS CURRENTLY UNDER DEVELOPMENT
-          </h3>
           <p>
             A student currently pursuing a Bachelor's degree in Frontend and
             Mobile Development.
           </p>
-          <p>Feel free to check out my GitHub or contact me on LinkedIn.</p>
+          <p>Feel free to check out my GitHub or contact me on LinkedIn</p>
         </article>
 
         <SocialMediaIcons />

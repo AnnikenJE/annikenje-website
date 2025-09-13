@@ -4,7 +4,7 @@ const ProjectsPage = () => {
   return (
     <main>
       <section>
-        <h1 className="projects-heading"> Projects</h1>
+        <h1 className="projects-heading">Projects</h1>
         <article></article>
       </section>
     </main>

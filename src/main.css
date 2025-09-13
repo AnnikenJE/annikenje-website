@@ -3,13 +3,14 @@
       Main colors
   */
 
-  --main-color: #D996C7;
-  --txt-color: #f6f5fb;
+  --main-color: #a94c5d;
+  --txt-color: ##BF787E;
 
-  --background-color: #0A0626;
+  --background-color:#F2D0D9;
+  --secondary-background-color: #F2E9E9;
 
   --link-color: var(--main-color);
-  --link-hover: #f6f5fb;
+  --link-hover: #BF787E;
 
   /*
       Fonts
@@ -23,7 +24,7 @@
       Shadows
   */
 
-  --box-shadow: 0px 4px 16px 0px rgba(121, 75, 132, 0.2);
+  --box-shadow: 0px 4px 16px 0px rgba(216, 211, 128, 0.2);
   --txt-shadow: 2px 2px 3px rgba(143, 108, 217, 0.1);
 }
 

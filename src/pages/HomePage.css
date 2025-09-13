@@ -13,6 +13,7 @@
   font-family: var(--main-font);
   letter-spacing: var(--letter-spacing);
   margin: 10rem;
+  background-color: var(--secondary-background-color);
 }
 
 /*
@@ -28,11 +29,14 @@
 }
 
 .article__heading {
-  font-weight: calc(var(--font-weight) * 0.5);
+  font-weight: calc(var(--font-weight) * 0.8);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
 }
 
 .social-media-icons {
-  margin: 4rem;
+  margin-bottom: 1rem;
+  margin: 2rem;
   text-align: center;
 }
 
