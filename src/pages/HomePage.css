@@ -42,6 +42,9 @@
 
 .warning {
   text-decoration: underline;
+  font-weight: 500;
+  font-size: large;
+  text-align: center;
 }
 
 /*

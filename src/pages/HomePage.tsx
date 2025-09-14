@@ -5,10 +5,11 @@ const HomePage = () => {
   return (
     <main className="home-main">
       <section className="introduction-section">
+        <p className="warning">This website is still under Development!</p>
         <h1 className="heading">HELLO!</h1>
-
         <article className="intrduction">
           <h2 className="article__heading">I'm Anniken \(^-^)/</h2>
+
           <p>
             A student currently pursuing a Bachelor's degree in Frontend and
             Mobile Development.
