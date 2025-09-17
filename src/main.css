@@ -3,14 +3,14 @@
       Main colors
   */
 
-  --main-color: #300943;
-  --txt-color: ##BF787E;
+  --main-color: #c47bb1;
+  --txt-color: #f2e2f7;
 
-  --background-color:#63b3c7;
-  --secondary-background-color: #F2E9E9;
+  --background-color:#300943;
+  --secondary-background-color: #300943;
 
   --link-color: var(--main-color);
-  --link-hover: #BF787E;
+  --link-hover: #fccff0e9;
 
   /*
       Fonts
