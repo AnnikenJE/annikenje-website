@@ -30,7 +30,6 @@
 
 .article__heading {
   font-weight: calc(var(--font-weight) * 0.8);
-  text-decoration: underline;
   text-decoration-thickness: 1px;
 }
 
@@ -45,6 +44,7 @@
   font-weight: 500;
   font-size: large;
   text-align: center;
+  color: crimson;
 }
 
 /*

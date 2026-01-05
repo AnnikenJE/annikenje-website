@@ -6,6 +6,12 @@
   font-size: 36px;
 }
 
+.projects-article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /*
      Resolutions
 */

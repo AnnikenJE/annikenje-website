@@ -6,6 +6,11 @@ const AboutPage = () => {
       <section className="about-section">
         <h1 className="about-heading">About</h1>
       </section>
+      <section>
+      <p>
+         
+      </p>
+         </section>
     </main>
   );
 };
