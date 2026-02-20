@@ -5,7 +5,6 @@ const HomePage = () => {
   return (
     <main className="home-main">
       <section className="introduction-section">
-        <p className="warning">This website is still under development!</p>
         <h1 className="heading">HELLO!</h1>
         <article className="intrduction">
           <h2 className="article__heading">I'm Anniken \(^-^)/</h2>

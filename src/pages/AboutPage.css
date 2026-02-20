@@ -6,15 +6,15 @@
   font-size: 36px;
 }
 
-/*.about-section {
-  border: 1px;
-  border-radius: 18px;
-  padding: 2rem;
-  font-family: var(--main-font);
-  letter-spacing: var(--letter-spacing);
-  margin: 10rem;
-  background-color: var(--secondary-background-color);
-}*/
+.about-section {
+  display: grid;
+  justify-content: center;
+}
+
+.about-article {
+  margin: 1rem;
+  max-width: 60rem;
+}
 
 /*
      Resolutions
@@ -25,5 +25,9 @@
     padding: 0;
     font-size: 24px;
     margin: 0;
+  }
+
+  .about-section {
+    margin: 1rem;
   }
 }

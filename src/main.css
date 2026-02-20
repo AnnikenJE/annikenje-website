@@ -6,7 +6,7 @@
   --main-color: #c47bb1;
   --txt-color: #f2e2f7;
 
-  --background-color:#0e0e0e;
+  --background-color: #0e0e0e;
   --secondary-background-color: #300943;
 
   --link-color: var(--main-color);
@@ -45,4 +45,15 @@ html {
   height: 100%;
   scroll-behavior: smooth;
   scroll-padding-top: 8rem;
+}
+
+.defaut-heading {
+  font-family: var(--main-font);
+  font-weight: calc(var(--font-weight) * 0.5);
+  letter-spacing: var(--letter-spacing);
+  color: #c47bb1;
+}
+
+.highlight-txt {
+  color: #c47bb1;
 }
