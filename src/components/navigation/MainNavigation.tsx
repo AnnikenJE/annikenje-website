@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import "./MainNavigation.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSquareGithub,
   faSquareLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
+import "./MainNavigation.css";
 
 const MainNavigation = () => {
   return (

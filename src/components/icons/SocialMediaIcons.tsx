@@ -3,12 +3,12 @@
 //
 // --------------
 
-import "./SocialMediaIcons.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSquareGithub,
   faSquareLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
+import "./SocialMediaIcons.css";
 
 const SocialMediaIcons = () => {
   return (
