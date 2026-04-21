@@ -7,7 +7,7 @@ const HomePage = () => {
       <section className="introduction-section">
         <h1 className="heading">HELLO!</h1>
         <article className="intrduction">
-          <h2 className="article__heading">I'm Anniken \(^-^)/</h2>
+          <h2 className="article__heading">I'm Anniken</h2>
 
           <p>
             A student currently pursuing a Bachelor's degree in Frontend and
