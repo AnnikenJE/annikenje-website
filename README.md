@@ -1,4 +1,4 @@
-# annikenje.com
+# annikenje.no
 
 Personal portfolio website for Anniken.
 
