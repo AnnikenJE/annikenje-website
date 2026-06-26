@@ -1,9 +1,6 @@
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faSquareGithub,
-  faSquareLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
+import { socialLinks } from "../icons/socialLinks";
 import "./MainNavigation.css";
 
 const MainNavigation = () => {
@@ -15,38 +12,28 @@ const MainNavigation = () => {
         </Link>
       </div>
       <ul className="main-navigation__list">
-        <div className="nav-item__wrapper">
-          <li>
-            <Link to="/about" className="main-navigation__item">
-              About
-            </Link>
-          </li>
-          <li>
-            <Link to="/projects" className="main-navigation__item">
-              Projects
-            </Link>
-          </li>
-        </div>
-        <div className="social-item__wrapper">
-          <li className="social-link">
+        <li className="nav-item__wrapper">
+          <Link to="/about" className="main-navigation__item">
+            About
+          </Link>
+          <Link to="/projects" className="main-navigation__item">
+            Projects
+          </Link>
+        </li>
+        <li className="social-item__wrapper">
+          {socialLinks.map((link) => (
             <a
-              href="https://github.com/AnnikenJE"
+              key={link.label}
+              href={link.href}
               target="_blank"
+              rel="noreferrer"
+              aria-label={link.label}
               className="main-navigation__item"
             >
-              <FontAwesomeIcon icon={faSquareGithub} />
+              <FontAwesomeIcon icon={link.icon} />
             </a>
-          </li>
-          <li className="social-link">
-            <a
-              href="https://www.linkedin.com/in/anniken-j%C3%B8rgensen-edvardsen-825160113/"
-              target="_blank"
-              className="main-navigation__item"
-            >
-              <FontAwesomeIcon icon={faSquareLinkedin} />
-            </a>
-          </li>
-        </div>
+          ))}
+        </li>
       </ul>
     </nav>
   );
