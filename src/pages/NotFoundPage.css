@@ -1,0 +1,42 @@
+/*
+    Layout
+*/
+
+.notfound-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  text-align: center;
+}
+
+.notfound-section {
+  letter-spacing: var(--letter-spacing);
+}
+
+/*
+    Text
+*/
+
+.notfound-heading {
+  color: var(--main-color);
+  font-weight: calc(var(--font-weight) * 0.5);
+  font-size: 88px;
+  margin: 0;
+}
+
+/*
+    Link
+*/
+
+.notfound-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+
+.notfound-link:hover {
+  color: var(--link-hover);
+}
