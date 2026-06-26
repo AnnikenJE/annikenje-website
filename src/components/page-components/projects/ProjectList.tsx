@@ -14,7 +14,7 @@ const ProjectList = () => {
       name: "Portfolio",
       description:
         "This website — my personal portfolio, built with React 19, TypeScript, and Vite. It uses client-side routing and hand-written vanilla CSS, and is an ongoing space where I experiment and keep improving.",
-      status: ProjectStatus.InProgress,
+      status: ProjectStatus.AlwaysEvolving,
       github: "https://github.com/AnnikenJE/annikenje-website",
     },
     {
@@ -82,6 +82,7 @@ const ProjectList = () => {
   ];
 
   const sections: { title: string; status: ProjectStatus }[] = [
+    { title: "Always evolving", status: ProjectStatus.AlwaysEvolving },
     { title: "In progress", status: ProjectStatus.InProgress },
     { title: "Completed", status: ProjectStatus.Completed },
     { title: "Not started", status: ProjectStatus.NotStarted },
