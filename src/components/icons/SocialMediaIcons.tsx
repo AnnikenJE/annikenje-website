@@ -1,27 +1,21 @@
-//
-//  Er ikke fornøyd med disse. Vil fjerne dem og legge dem til i forsiden og slette dene.
-//
-// --------------
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faSquareGithub,
-  faSquareLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
+import { socialLinks } from "./socialLinks";
 import "./SocialMediaIcons.css";
 
 const SocialMediaIcons = () => {
   return (
     <section className="social-media-icons">
-      <a href="https://github.com/AnnikenJE" target="_blank">
-        <FontAwesomeIcon icon={faSquareGithub} />
-      </a>
-      <a
-        href="https://www.linkedin.com/in/anniken-j%C3%B8rgensen-edvardsen-825160113/"
-        target="_blank"
-      >
-        <FontAwesomeIcon icon={faSquareLinkedin} />
-      </a>
+      {socialLinks.map((link) => (
+        <a
+          key={link.label}
+          href={link.href}
+          target="_blank"
+          rel="noreferrer"
+          aria-label={link.label}
+        >
+          <FontAwesomeIcon icon={link.icon} />
+        </a>
+      ))}
     </section>
   );
 };
