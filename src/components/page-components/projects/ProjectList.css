@@ -1,0 +1,56 @@
+/*
+    Layout
+*/
+
+.projects-sections__wrapper {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1rem 4rem;
+}
+
+.projects-sections__wrapper section {
+  margin-bottom: 2.5rem;
+}
+
+.projects-sections__wrapper h2 {
+  color: var(--main-color);
+  letter-spacing: var(--letter-spacing);
+  font-weight: calc(var(--font-weight) * 0.5);
+  border-bottom: 1px solid rgba(196, 123, 177, 0.2);
+  padding-bottom: 0.5rem;
+}
+
+/*
+    Collapsible section header
+*/
+
+.projects-section__toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.projects-section__count {
+  opacity: 0.6;
+  font-size: 0.8em;
+}
+
+.projects-section__chevron {
+  font-size: 0.7em;
+  transition: transform 0.2s ease;
+}
+
+.projects-section__chevron--collapsed {
+  transform: rotate(-90deg);
+}
