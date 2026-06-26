@@ -9,7 +9,7 @@ const AboutPage = () => {
 
       <section className="about-section">
         <article className="about-article">
-          <h2 className="defaut-heading">Who am I?</h2>
+          <h2 className="default-heading">Who am I?</h2>
           <p>
             I’m Anniken, a bachelor’s student specializing in Frontend and
             Mobile Development. I’m currently in my third year, working on my
@@ -30,7 +30,7 @@ const AboutPage = () => {
         </article>
 
         <article className="about-article">
-          <h2 className="defaut-heading">Skills</h2>
+          <h2 className="default-heading">Skills</h2>
           <p>
             <span className="highlight-txt">Frontend & Web:</span> React,
             TypeScript, Bootstrap
@@ -47,7 +47,7 @@ const AboutPage = () => {
         </article>
 
         <article className="about-article">
-          <h2 className="defaut-heading">This Website</h2>
+          <h2 className="default-heading">This Website</h2>
           <p>
             This website is an ongoing personal project where I experiment,
             learn, and improve over time. It’s a space where I share what I’m

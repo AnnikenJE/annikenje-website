@@ -6,7 +6,7 @@ const HomePage = () => {
     <main className="home-main">
       <section className="introduction-section">
         <h1 className="heading">HELLO!</h1>
-        <article className="intrduction">
+        <article className="introduction">
           <h2 className="article__heading">I'm Anniken</h2>
 
           <p>

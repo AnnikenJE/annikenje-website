@@ -47,13 +47,13 @@ html {
   scroll-padding-top: 8rem;
 }
 
-.defaut-heading {
+.default-heading {
   font-family: var(--main-font);
   font-weight: calc(var(--font-weight) * 0.5);
   letter-spacing: var(--letter-spacing);
-  color: #c47bb1;
+  color: var(--main-color);
 }
 
 .highlight-txt {
-  color: #c47bb1;
+  color: var(--main-color);
 }
