@@ -1,5 +1,6 @@
 export const ProjectStatus = {
   InProgress: "In progress",
+  AlwaysEvolving: "Always evolving",
   Completed: "Completed",
   NotStarted: "Not started",
 } as const;
