@@ -76,6 +76,13 @@
   color: var(--link-hover);
 }
 
+.main-navigation__item.active {
+  color: var(--link-hover);
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 1px;
+}
+
 /*
     Resolution
 */
@@ -95,7 +102,7 @@
   }
 
   .main-navigation__item {
-    padding: rem;
+    padding: 0.5rem;
   }
 
   .social-item__wrapper {
@@ -104,10 +111,11 @@
 
   .main-navigation__list {
     display: flex;
-    padding: 0;
-    flex-direction: column-reverse;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 0 0.5rem;
     margin: 0;
-    padding-bottom: 0.5rem;
     width: 100%;
   }
 
