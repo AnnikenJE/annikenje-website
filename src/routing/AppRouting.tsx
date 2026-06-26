@@ -1,15 +1,17 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { AboutPage, HomePage, ProjectsPage } from "../pages";
-import MainHeader from "../components/layout/MainHeader";
+import { AboutPage, HomePage, ProjectsPage, NotFoundPage } from "../pages";
+import MainLayout from "../components/layout/MainLayout";
 
 const AppRouting = () => {
   return (
     <BrowserRouter>
-      <MainHeader />
       <Routes>
-        <Route path="/" element={<HomePage />}></Route>
-        <Route path="/about" element={<AboutPage />}></Route>
-        <Route path="/projects" element={<ProjectsPage />}></Route>
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );
