@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { socialLinks } from "../icons/socialLinks";
 import "./MainNavigation.css";
@@ -13,12 +13,14 @@ const MainNavigation = () => {
       </div>
       <ul className="main-navigation__list">
         <li className="nav-item__wrapper">
-          <Link to="/about" className="main-navigation__item">
+          <NavLink to="/about" className="main-navigation__item">
             About
-          </Link>
-          <Link to="/projects" className="main-navigation__item">
+          </NavLink>
+        </li>
+        <li className="nav-item__wrapper">
+          <NavLink to="/projects" className="main-navigation__item">
             Projects
-          </Link>
+          </NavLink>
         </li>
         <li className="social-item__wrapper">
           {socialLinks.map((link) => (
