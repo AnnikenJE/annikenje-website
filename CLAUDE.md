@@ -31,7 +31,7 @@ Personal portfolio website for Anniken Jørgensen Edvardsen — React 19 + TypeS
 
 **Data model:** `src/interfaces/IProjectItem.ts` defines `IProjectItem` interface and `ProjectStatus` const enum (`InProgress`, `Completed`, `NotStarted`).
 
-**Social links:** `src/components/icons/socialLinks.ts` is the single source for GitHub/LinkedIn URLs + icons. Both `SocialMediaIcons` (homepage) and `MainNavigation` map over it.
+**Social links:** `src/components/icons/socialLinks.ts` is the single source for GitHub/LinkedIn URLs + icons. `MainNavigation` maps over it for the nav icons; `HomePage` looks up the same entries to render inline text links.
 
 **Project components:** `src/components/page-components/projects/` — `ProjectList` (hardcoded project data, filters by status) and `ProjectListItem` (renders one project).
 
