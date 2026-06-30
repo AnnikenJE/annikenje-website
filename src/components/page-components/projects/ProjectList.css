@@ -15,8 +15,8 @@
 .projects-sections__wrapper h2 {
   color: var(--main-color);
   letter-spacing: var(--letter-spacing);
-  font-weight: calc(var(--font-weight) * 0.5);
-  border-bottom: 1px solid rgba(196, 123, 177, 0.2);
+  font-weight: var(--heading-weight);
+  border-bottom: 1px solid color-mix(in srgb, var(--main-color) 20%, transparent);
   padding-bottom: 0.5rem;
 }
 

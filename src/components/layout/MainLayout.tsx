@@ -4,6 +4,9 @@ import MainHeader from "./MainHeader";
 const MainLayout = () => {
   return (
     <>
+      <a href="#main-content" className="skip-link">
+        Skip to main content
+      </a>
       <MainHeader />
       <Outlet />
     </>

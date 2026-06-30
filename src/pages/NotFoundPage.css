@@ -15,17 +15,6 @@
 }
 
 /*
-    Text
-*/
-
-.notfound-heading {
-  color: var(--main-color);
-  font-weight: calc(var(--font-weight) * 0.5);
-  font-size: 88px;
-  margin: 0;
-}
-
-/*
     Link
 */
 

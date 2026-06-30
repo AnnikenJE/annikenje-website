@@ -22,21 +22,14 @@
 
 .heading {
   margin: 0;
-  font-weight: var(--font-weight);
   color: var(--main-color);
   font-size: 88px;
-  font-weight: calc(var(--font-weight) * 0.5);
+  font-weight: var(--display-weight);
 }
 
 .article__heading {
+  color: var(--txt-color);
   font-weight: calc(var(--font-weight) * 0.8);
-  text-decoration-thickness: 1px;
-}
-
-.social-media-icons {
-  margin-bottom: 1rem;
-  margin: 2rem;
-  text-align: center;
 }
 
 /*
@@ -50,10 +43,6 @@
 
   .introduction-section {
     padding: 1rem;
-  }
-
-  .social-media-icons {
-    margin: 1rem;
   }
 }
 
