@@ -5,7 +5,7 @@ import "./MainNavigation.css";
 
 const MainNavigation = () => {
   return (
-    <nav className="main-navigation">
+    <nav className="main-navigation" aria-label="Primary">
       <div className="logo__wrapper">
         <Link to="/" className="logo">
           Anniken
@@ -29,7 +29,7 @@ const MainNavigation = () => {
               href={link.href}
               target="_blank"
               rel="noreferrer"
-              aria-label={link.label}
+              aria-label={`${link.label} (opens in a new tab)`}
               className="main-navigation__item"
             >
               <FontAwesomeIcon icon={link.icon} />

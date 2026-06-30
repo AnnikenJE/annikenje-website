@@ -23,6 +23,7 @@ const ProjectListItem: FC<IProjectItem> = ({
               target="_blank"
               rel="noreferrer"
               className="project-item__link"
+              aria-label={`Visit ${name} (opens in a new tab)`}
             >
               <FontAwesomeIcon icon={faArrowUpRightFromSquare} /> Visit site
             </a>
@@ -33,7 +34,7 @@ const ProjectListItem: FC<IProjectItem> = ({
               target="_blank"
               rel="noreferrer"
               className="project-item__link"
-              aria-label={`${name} on GitHub`}
+              aria-label={`${name} on GitHub (opens in a new tab)`}
             >
               <FontAwesomeIcon icon={faSquareGithub} /> Code
             </a>
