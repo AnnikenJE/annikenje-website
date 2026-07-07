@@ -10,7 +10,7 @@
   --secondary-background-color: #300943;
 
   --link-color: var(--main-color);
-  --link-hover: #fccff0e9;
+  --link-hover: color-mix(in srgb, var(--main-color) 45%, white);
 
   /*
       Fonts
@@ -117,6 +117,34 @@ h3 {
 
 .highlight-txt {
   color: var(--main-color);
+}
+
+/*
+    Motion vocabulary
+    -----------------
+    Content rises and fades in when a page mounts (and on every route change,
+    since React Router remounts the page). One shared class used across pages
+    so the whole site moves the same way. Stagger order is set per element via
+    the `--i` custom property: animation-delay = --i * 80ms.
+
+    Reduced motion: the global prefers-reduced-motion block below forces the
+    animation to finish instantly, so these elements land at their visible end
+    state (opacity 1) with no movement.
+*/
+.reveal {
+  animation: rise 0.7s cubic-bezier(0.2, 0.6, 0.2, 1) both;
+  animation-delay: calc(var(--i, 0) * 80ms);
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(1.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /*

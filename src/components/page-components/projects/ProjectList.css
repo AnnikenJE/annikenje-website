@@ -16,7 +16,8 @@
   color: var(--main-color);
   letter-spacing: var(--letter-spacing);
   font-weight: var(--heading-weight);
-  border-bottom: 1px solid color-mix(in srgb, var(--main-color) 20%, transparent);
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--main-color) 20%, transparent);
   padding-bottom: 0.5rem;
 }
 
@@ -53,4 +54,22 @@
 
 .projects-section__chevron--collapsed {
   transform: rotate(-90deg);
+}
+
+/*
+    Slide-down panel
+*/
+.projects-section__panel {
+  display: grid;
+  grid-template-rows: 1fr;
+  transition: grid-template-rows 0.35s ease;
+}
+
+.projects-section__panel--collapsed {
+  grid-template-rows: 0fr;
+}
+
+.projects-section__panel-inner {
+  overflow: hidden;
+  min-height: 0;
 }

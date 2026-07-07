@@ -6,6 +6,7 @@ import {
   type IProjectItem,
 } from "../../../interfaces/IProjectItem";
 import ProjectListItem from "./ProjectListItem";
+import { revealOrder } from "../../../utils/reveal";
 import "./ProjectList.css";
 
 const ProjectList = () => {
@@ -95,14 +96,14 @@ const ProjectList = () => {
 
   return (
     <div className="projects-sections__wrapper">
-      {sections.map(({ title, status }) => {
+      {sections.map(({ title, status }, index) => {
         const items = projects.filter((project) => project.status === status);
         const isCollapsed = collapsed[status];
 
         if (items.length === 0) return null;
 
         return (
-          <section key={status}>
+          <section key={status} className="reveal" style={revealOrder(index + 2)}>
             <h2>
               <button
                 type="button"
@@ -123,10 +124,19 @@ const ProjectList = () => {
                 />
               </button>
             </h2>
-            {!isCollapsed &&
-              items.map((project) => (
-                <ProjectListItem key={project.name} {...project} />
-              ))}
+            <div
+              className={
+                isCollapsed
+                  ? "projects-section__panel projects-section__panel--collapsed"
+                  : "projects-section__panel"
+              }
+            >
+              <div className="projects-section__panel-inner" inert={isCollapsed}>
+                {items.map((project) => (
+                  <ProjectListItem key={project.name} {...project} />
+                ))}
+              </div>
+            </div>
           </section>
         );
       })}
