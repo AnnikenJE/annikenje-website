@@ -21,7 +21,9 @@ Personal portfolio website for Anniken Jørgensen Edvardsen — React 19 + TypeS
 - `src/routing/AppRouting.tsx` — defines all routes and renders `MainHeader` as a persistent layout wrapper around every page
 - Routes: `/` → `HomePage`, `/about` → `AboutPage`, `/projects` → `ProjectsPage`
 
-**Styling:** Each component has a co-located `.css` file. No CSS modules, Tailwind, or CSS-in-JS — plain scoped CSS files.
+**Styling:** Each component has a co-located `.css` file. No CSS modules, Tailwind, or CSS-in-JS — plain scoped CSS files. Global styles and design tokens live in `src/main.css`.
+
+**Motion:** `src/main.css` defines a single shared `.reveal` class (a `rise` keyframe that fades + translates content in on mount/route change). Stagger is driven by the `--i` custom property (`animation-delay = --i * 80ms`), set per element via the `revealOrder` helper in `src/utils/reveal.ts`. Respects `prefers-reduced-motion`.
 
 **Icons:** FontAwesome via `@fortawesome/react-fontawesome` for social media links.
 
@@ -38,4 +40,4 @@ Personal portfolio website for Anniken Jørgensen Edvardsen — React 19 + TypeS
 ## Current State
 
 - `AboutPage` — has real content: bio, skills, "this website" section. Not a stub anymore.
-- `ProjectsPage` — still mostly stub ("Coming soon"), but `ProjectList` component exists and is ready to be wired in.
+- `ProjectsPage` — real content, with `ProjectList` wired in. Not a stub anymore.

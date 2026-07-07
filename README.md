@@ -1,10 +1,10 @@
 # annikenje.no
 
-Personal portfolio website for Anniken.
+Personal portfolio for Anniken — live at **[annikenje.no](https://annikenje.no)**.
 
-Built with React 19, TypeScript, and Vite. Client-side routing via React Router v7. Styled with plain vanilla CSS — no frameworks, by choice.
+Built with React 19, TypeScript, and Vite. Client-side routing via React Router v7. Overkill? Probably.
 
-> **Note:** This is an older project I started a while back, so some things reflect decisions I would approach differently today. Vanilla CSS was a deliberate choice to avoid framework overhead and keep things simple. Going forward, commits follow the [Conventional Commits](https://www.conventionalcommits.org/) style (`feat:`, `fix:`, etc.). Claude Code was added recently and is now used to help maintain the project.
+> **Note:** This is an older project I started a while back, so some things reflect decisions I would approach differently today.
 
 ## Getting started
 
@@ -21,3 +21,20 @@ npm run build    # Build for production
 npm run preview  # Preview production build
 npm run lint     # Run ESLint
 ```
+
+## Project structure
+
+```
+src/
+  components/   Layout, navigation, icons, and project page-components
+  interfaces/   Shared TypeScript types (e.g. IProjectItem)
+  pages/        HomePage, AboutPage, ProjectsPage, NotFoundPage
+  routing/      AppRouting — routes + persistent MainHeader layout
+  utils/        Small helpers — reveal (page-entry stagger), accent (per-visit color)
+  main.css      Global styles, design tokens, and shared motion
+```
+
+Content fades and rises into place on each page load via a single shared
+`.reveal` class, and it honors `prefers-reduced-motion`. The accent color is
+picked at random on each visit, so the site looks a little different every time
+you stop by.
