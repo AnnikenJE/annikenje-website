@@ -80,6 +80,12 @@ const ProjectList = () => {
         "A Tamagotchi-style virtual pet game — a personal project I plan to start.",
       status: ProjectStatus.NotStarted,
     },
+    {
+      name: "Snake (C)",
+      description:
+        "A terminal Snake game written in C with ncurses — a project to strengthen my C skills: manual memory, pointers, and a real-time game loop.",
+      status: ProjectStatus.NotStarted,
+    },
   ];
 
   const sections: { title: string; status: ProjectStatus }[] = [
