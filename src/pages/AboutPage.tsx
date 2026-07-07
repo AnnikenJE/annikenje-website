@@ -1,14 +1,17 @@
+import { revealOrder as order } from "../utils/reveal";
 import "./AboutPage.css";
 
 const AboutPage = () => {
   return (
     <main id="main-content" tabIndex={-1}>
       <section className="about-section">
-        <h1 className="page-title">About</h1>
+        <h1 className="page-title reveal" style={order(0)}>
+          About
+        </h1>
       </section>
 
       <section className="about-section">
-        <article className="about-article">
+        <article className="about-article reveal" style={order(1)}>
           <h2>Who am I?</h2>
           <p>
             I’m Anniken, a developer who recently graduated with a Bachelor’s in
@@ -31,26 +34,28 @@ const AboutPage = () => {
         </article>
 
         <article className="about-article">
-          <h2>Skills</h2>
-          <p>
+          <h2 className="reveal" style={order(2)}>
+            Skills
+          </h2>
+          <p className="reveal" style={order(3)}>
             <span className="highlight-txt">Frontend & Web:</span> React,
             TypeScript, Bootstrap
           </p>
-          <p>
+          <p className="reveal" style={order(4)}>
             <span className="highlight-txt">Mobile:</span> React Native, Kotlin,
             Swift
           </p>
-          <p>
+          <p className="reveal" style={order(5)}>
             <span className="highlight-txt">Backend & Languages:</span> Python,
             Java, C#, .NET, C, SQL, Firebase
           </p>
-          <p>
+          <p className="reveal" style={order(6)}>
             <span className="highlight-txt">Tools & Other:</span> Unity, Figma,
             Scrum
           </p>
         </article>
 
-        <article className="about-article">
+        <article className="about-article reveal" style={order(7)}>
           <h2>What’s next</h2>
           <p>
             With my degree finished, I’m excited to keep building real-world
@@ -60,7 +65,7 @@ const AboutPage = () => {
           </p>
         </article>
 
-        <article className="about-article">
+        <article className="about-article reveal" style={order(8)}>
           <h2>This Website</h2>
           <p>
             This website is an ongoing personal project where I experiment,
