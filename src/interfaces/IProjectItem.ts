@@ -2,7 +2,7 @@ export const ProjectStatus = {
   InProgress: "In progress",
   AlwaysEvolving: "Always evolving",
   Completed: "Completed",
-  NotStarted: "Not started",
+  Planned: "Planned",
 } as const;
 
 export type ProjectStatus = (typeof ProjectStatus)[keyof typeof ProjectStatus];

@@ -11,11 +11,11 @@ const HomePage = () => {
         </h1>
         <article className="introduction">
           <h2 className="article__heading reveal" style={order(1)}>
-            I'm Anniken
+            I’m Anniken
           </h2>
 
           <p className="reveal" style={order(2)}>
-            A recently graduated developer with a Bachelor's degree in Frontend
+            A recently graduated developer with a Bachelor’s degree in Frontend
             and Mobile Development.
           </p>
           <p className="reveal" style={order(3)}>

@@ -14,85 +14,85 @@ const ProjectList = () => {
     {
       name: "Portfolio",
       description:
-        "This website — my personal portfolio, built with React 19, TypeScript, and Vite. It uses client-side routing and hand-written vanilla CSS, and is an ongoing space where I experiment and keep improving.",
+        "This very website. My personal portfolio, live at annikenje.no. Built with React 19, TypeScript, and Vite, with client-side routing (React Router v7) and hand-written vanilla CSS. Content fades and rises into place as each page loads, and the accent color is picked at random on every visit, so it looks a little different every time you stop by. An ongoing space where I experiment and keep improving.",
       status: ProjectStatus.AlwaysEvolving,
       github: "https://github.com/AnnikenJE/annikenje-website",
     },
     {
       name: "The Lionhearts",
       description:
-        "A website I'm building for my World of Warcraft guild, The Lionhearts.",
+        "A website for The Lionhearts, my World of Warcraft guild on Darkmoon Faire (EU). Built with Nuxt 4 (Vue 3 + Vite) and TypeScript, with Nitro server routes that fetch and cache the guild roster live from the Raider.IO API, grouped by in-game rank, with collapsible sections and official WoW class colors. Caching server-side keeps visitor traffic off the API.",
       status: ProjectStatus.InProgress,
       url: "https://dev.thelionhearts.eu/",
     },
     {
       name: "Weather Forecast",
       description:
-        "A weather forecast app built with Python and Flask — still a work in progress.",
+        "My first self-initiated Python project, a Flask web app that fetches live weather data, with plans to use the Claude API to suggest what to wear based on the forecast. I’m using it to learn Python and Flask, writing the code myself rather than generating it. Work in progress.",
       status: ProjectStatus.InProgress,
       github: "https://github.com/AnnikenJE/weather-forecast",
     },
     {
-      name: "Fullstack Web App",
+      name: "TrumpVerse",
       description:
-        "A fullstack web app built with React, a .NET/C# API, and SQLite, with full CRUD functionality. Web Development exam project.",
+        "A fullstack web app with a React + TypeScript frontend and a .NET/C# Web API backed by SQLite. Full CRUD, image uploads, and API documentation, with seamless frontend–backend interaction. Web Development exam project. Case provided by the school.",
       status: ProjectStatus.Completed,
       github: "https://github.com/AnnikenJE/exam-webdevelopment-2024",
     },
     {
       name: "Rick & Morty Android App",
       description:
-        "An Android app built with Kotlin and Jetpack Compose, integrating the Rick and Morty API. Android Development exam project.",
+        "An Android app built with Kotlin and Jetpack Compose that browses characters from the Rick and Morty API, stores your own custom characters locally, and navigates across multiple screens with proper error handling and user feedback. Android Programming exam project.",
       status: ProjectStatus.Completed,
       github: "https://github.com/AnnikenJE/exam-android-development-2024",
     },
     {
-      name: "Python Programming Exam",
+      name: "Python Fundamentals",
       description:
-        "A Python Programming exam project.",
+        "A Python 3.12 project covering fundamentals across four tasks: a word-guessing game, a class-based library management system, a menu-driven bank account system, and a palindrome checker. Python Programming exam project.",
       status: ProjectStatus.Completed,
       github: "https://github.com/AnnikenJE/exam-python-programming-2025",
     },
     {
-      name: "Cross-Platform Exam",
+      name: "DugnadHub",
       description:
-        "A Cross-Platform Development exam project, built with TypeScript.",
+        "A cross-platform app for organizing and coordinating volunteer activities (dugnader): create, browse, and join dugnader in a structured, user-friendly way. Built with React Native, TypeScript, and Firebase, running on iOS and web, with Google and email/password sign-in and Firebase handling auth, database, and image storage. Cross-Platform Development exam project.",
       status: ProjectStatus.Completed,
       github: "https://github.com/AnnikenJE/exam-crossplatform-2025",
     },
     {
-      name: "iOS Programming Exam",
+      name: "Beacon",
       description:
-        "An iOS app built with Swift for the iOS Programming exam.",
+        "A map-based SwiftUI app combining map interaction, location search via the Geoapify Places API, and local data storage in a clean, user-friendly design. Built with Swift and SwiftUI. iOS Programming exam project.",
       status: ProjectStatus.Completed,
       github: "https://github.com/AnnikenJE/exam-ios-programming-2025",
     },
     {
-      name: "Web Development Assignment",
+      name: "Armies of Zondor",
       description:
-        "A web development assignment built with JavaScript.",
+        "A medieval army management web app (built with rats instead of soldiers) across three screens: a resource shop for buying warriors, animals, and war machines; resource gathering with randomized outcomes; and an overview of your army and resources. Built with HTML, CSS, and vanilla JavaScript. Web Development coursework.",
       status: ProjectStatus.Completed,
       github: "https://github.com/AnnikenJE/assignment-webdevelopment-2024",
     },
     {
       name: "Pet game",
-      description:
-        "A Tamagotchi-style virtual pet game — a personal project I plan to start.",
-      status: ProjectStatus.NotStarted,
+      description: "A Tamagotchi-style virtual pet game.",
+      status: ProjectStatus.Planned,
     },
     {
       name: "Snake (C)",
       description:
-        "A terminal Snake game written in C with ncurses — a project to strengthen my C skills: manual memory, pointers, and a real-time game loop.",
-      status: ProjectStatus.NotStarted,
+        "A terminal Snake game written in C with ncurses, to strengthen my C skills: manual memory, pointers, and a real-time game loop.",
+      status: ProjectStatus.Planned,
     },
   ];
 
-  const sections: { title: string; status: ProjectStatus }[] = [
-    { title: "Always evolving", status: ProjectStatus.AlwaysEvolving },
-    { title: "In progress", status: ProjectStatus.InProgress },
-    { title: "Completed", status: ProjectStatus.Completed },
-    { title: "Not started", status: ProjectStatus.NotStarted },
+  // Display order of the status sections; each status doubles as its heading.
+  const sections: ProjectStatus[] = [
+    ProjectStatus.AlwaysEvolving,
+    ProjectStatus.InProgress,
+    ProjectStatus.Completed,
+    ProjectStatus.Planned,
   ];
 
   const [collapsed, setCollapsed] = useState<Record<string, boolean>>({});
@@ -102,7 +102,7 @@ const ProjectList = () => {
 
   return (
     <div className="projects-sections__wrapper">
-      {sections.map(({ title, status }, index) => {
+      {sections.map((status, index) => {
         const items = projects.filter((project) => project.status === status);
         const isCollapsed = collapsed[status];
 
@@ -118,7 +118,7 @@ const ProjectList = () => {
                 aria-expanded={!isCollapsed}
               >
                 <span>
-                  {title} <span className="projects-section__count">({items.length})</span>
+                  {status} <span className="projects-section__count">({items.length})</span>
                 </span>
                 <FontAwesomeIcon
                   icon={faChevronDown}
