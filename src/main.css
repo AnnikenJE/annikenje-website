@@ -51,6 +51,13 @@ body {
   font-weight: var(--font-weight);
 }
 
+/* Consistent side gutter so content never sits flush against the screen
+   edge on phones / narrow viewports. Harmless on desktop, where page
+   content is max-width capped and centered. */
+main {
+  padding-inline: 1.25rem;
+}
+
 html {
   height: 100%;
   scroll-behavior: smooth;
