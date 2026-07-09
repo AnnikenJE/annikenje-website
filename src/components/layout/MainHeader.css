@@ -1,5 +1,23 @@
 .main-header {
   position: sticky;
   top: 0;
+  z-index: 10;
   background-color: var(--background-color);
+}
+
+/* Soft fade below the header so body text dissolves out as it scrolls
+   under the bar, instead of being clipped at a hard horizontal edge */
+.main-header::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 2rem;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    var(--background-color),
+    transparent
+  );
 }
