@@ -15,22 +15,17 @@ const AboutPage = () => {
           <h2>Who am I?</h2>
           <p>
             I’m Anniken, a developer who recently graduated with a Bachelor’s in
-            Frontend and Mobile Development. I enjoy building apps for both web
-            and mobile, and I’m continuing to grow my backend skills — currently
-            learning Flask and Vue.
+            Frontend and Mobile Development. I build apps for web and mobile,
+            and I’m growing my backend skills, currently working in Python and
+            Flask.
           </p>
 
           <p>
-            I started my studies with a focus on interactive design, but quickly
-            shifted towards programming after trying it for the first time. I
-            find programming fun, even though I haven’t been doing it for many
-            years.
+            I started my studies focused on interactive design, then shifted to
+            programming the first time I tried it. It stuck.
           </p>
 
-          <p>
-            I enjoy learning by challenging myself and working on things I don’t
-            fully understand yet.
-          </p>
+          <p>The work I like best is the work I don’t fully understand yet.</p>
         </article>
 
         <article className="about-article">
@@ -39,43 +34,46 @@ const AboutPage = () => {
           </h2>
           <p className="reveal" style={order(3)}>
             <span className="highlight-txt">Frontend & Web:</span> React,
-            TypeScript, Bootstrap
+            TypeScript, Vue, Nuxt, Vite, CSS
           </p>
           <p className="reveal" style={order(4)}>
-            <span className="highlight-txt">Mobile:</span> React Native, Kotlin,
-            Swift
+            <span className="highlight-txt">Mobile:</span> React Native, Kotlin
+            (Jetpack Compose), Swift (SwiftUI)
           </p>
           <p className="reveal" style={order(5)}>
             <span className="highlight-txt">Backend & Languages:</span> Python,
-            Java, C#, .NET, C, SQL, Firebase
+            Flask, C#, .NET, Java, SQL, Firebase
           </p>
           <p className="reveal" style={order(6)}>
-            <span className="highlight-txt">Tools & Other:</span> Unity, Figma,
-            Scrum
+            <span className="highlight-txt">Tools & Other:</span> Git, Unity,
+            Figma, Scrum
           </p>
         </article>
 
         <article className="about-article reveal" style={order(7)}>
           <h2>What’s next</h2>
           <p>
-            With my degree finished, I’m excited to keep building real-world
-            projects, deepen my skills, and take on new challenges. I’m always
-            open to learning something new — and to connecting with people who
-            are building interesting things.
+            I’m deepening my backend skills. Python and Flask now, C next,
+            starting with a terminal Snake game to get hands-on with manual
+            memory, pointers, and a real-time game loop.
+          </p>
+          <p>
+            I’m also experimenting with AI tooling, Claude Code and GitHub
+            Copilot, to see where it helps and where it gets in the way. I keep
+            writing code by hand alongside it, so my own skills stay sharp.
+          </p>
+
+          <p>
+            I’m always up for connecting with people building interesting
+            things.
           </p>
         </article>
 
         <article className="about-article reveal" style={order(8)}>
           <h2>This Website</h2>
           <p>
-            This website is an ongoing personal project where I experiment,
-            learn, and improve over time. It’s a space where I share what I’m
-            working on and exploring.
-          </p>
-          <p>
-            It’s built with React, TypeScript, and Vite — honestly a bit of
-            overkill for a site this size, but it’s been a fun way to keep
-            learning.
+            This site is an ongoing personal project. It’s a place to
+            experiment, learn, and share what I’m working on.
           </p>
           <p>It might look a little different next time you stop by. (★‿★)</p>
         </article>
