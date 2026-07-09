@@ -7,25 +7,15 @@
 }
 
 .introduction-section {
-  border: 1px;
-  border-radius: 18px;
   padding: 2rem;
   font-family: var(--main-font);
   letter-spacing: var(--letter-spacing);
   margin: 10rem;
-  /*background-color: var(--secondary-background-color);*/
 }
 
 /*
     Text and icons
 */
-
-.heading {
-  margin: 0;
-  color: var(--main-color);
-  font-size: 88px;
-  font-weight: var(--display-weight);
-}
 
 .article__heading {
   color: var(--txt-color);
@@ -37,10 +27,6 @@
 */
 
 @media (width < 768px) {
-  .heading {
-    font-size: 44px;
-  }
-
   .introduction-section {
     padding: 1rem;
   }

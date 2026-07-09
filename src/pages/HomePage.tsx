@@ -6,7 +6,7 @@ const HomePage = () => {
   return (
     <main id="main-content" tabIndex={-1} className="home-main">
       <section className="introduction-section">
-        <h1 className="heading reveal" style={order(0)}>
+        <h1 className="display-heading reveal" style={order(0)}>
           HELLO!
         </h1>
         <article className="introduction">

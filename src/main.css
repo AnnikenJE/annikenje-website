@@ -34,7 +34,6 @@
       Shadows
   */
 
-  --box-shadow: 0px 4px 16px 0px rgba(216, 211, 128, 0.2);
   --txt-shadow: 2px 2px 3px rgba(143, 108, 217, 0.1);
 }
 
@@ -53,9 +52,12 @@ body {
 
 /* Consistent side gutter so content never sits flush against the screen
    edge on phones / narrow viewports. Harmless on desktop, where page
-   content is max-width capped and centered. */
+   content is max-width capped and centered. The top padding keeps the
+   first heading clear of the header's fade band so the fade never sits
+   over the title. */
 main {
   padding-inline: 1.25rem;
+  padding-top: 3.25rem;
 }
 
 html {
@@ -94,13 +96,13 @@ h3 {
   font-size: 1.15rem;
 }
 
-/* Large hero / display titles — HELLO! and 404 */
+/* Large hero / display titles — HELLO! and 404.
+   Alignment is left to the page layout, which already positions these. */
 .display-heading {
   margin: 0;
   font-weight: var(--display-weight);
   letter-spacing: var(--letter-spacing);
   font-size: 5.5rem;
-  text-align: center;
 }
 
 /* Standard page titles — About, Projects */
