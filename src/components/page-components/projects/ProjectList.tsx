@@ -28,7 +28,7 @@ const ProjectList = () => {
     {
       name: "Weather Forecast",
       description:
-        "My first self-initiated Python project, a Flask web app that fetches live weather data, with plans to use the Claude API to suggest what to wear based on the forecast. I’m using it to learn Python and Flask, writing the code myself rather than generating it.",
+        "My first self-initiated Python project, a Flask web app that fetches live weather data, with plans to use the Claude API to suggest what to wear based on the forecast.",
       status: ProjectStatus.InProgress,
       github: "https://github.com/AnnikenJE/weather-forecast",
     },
