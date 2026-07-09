@@ -2,9 +2,7 @@
 
 Personal portfolio for Anniken — live at **[annikenje.no](https://annikenje.no)**.
 
-Built with React 19, TypeScript, and Vite. Client-side routing via React Router v7. Overkill? Probably.
-
-> **Note:** This is an older project I started a while back, so some things reflect decisions I would approach differently today.
+Built with React 19, TypeScript, and Vite. Client-side routing via React Router v7.
 
 ## Getting started
 
@@ -29,7 +27,7 @@ src/
   components/   Layout, navigation, icons, and project page-components
   interfaces/   Shared TypeScript types (e.g. IProjectItem)
   pages/        HomePage, AboutPage, ProjectsPage, NotFoundPage
-  routing/      AppRouting — routes + persistent MainHeader layout
+  routing/      AppRouting — route definitions, nested under MainLayout
   utils/        Small helpers — reveal (page-entry stagger), accent (per-visit color)
   main.css      Global styles, design tokens, and shared motion
 ```
