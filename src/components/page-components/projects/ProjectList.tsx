@@ -14,21 +14,21 @@ const ProjectList = () => {
     {
       name: "Portfolio",
       description:
-        "This very website. My personal portfolio, live at annikenje.no. Built with React 19, TypeScript, and Vite, with client-side routing (React Router v7) and hand-written vanilla CSS. Content fades and rises into place as each page loads, and the accent color is picked at random on every visit, so it looks a little different every time you stop by. An ongoing space where I experiment and keep improving.",
+        "My personal portfolio, the site you are on now, built with React 19, TypeScript, and Vite with client-side routing via React Router v7.",
       status: ProjectStatus.AlwaysEvolving,
       github: "https://github.com/AnnikenJE/annikenje-website",
     },
     {
       name: "The Lionhearts",
       description:
-        "A website for The Lionhearts, my World of Warcraft guild on Darkmoon Faire (EU). Built with Nuxt 4 (Vue 3 + Vite) and TypeScript, with Nitro server routes that fetch and cache the guild roster live from the Raider.IO API, grouped by in-game rank, with collapsible sections and official WoW class colors. Caching server-side keeps visitor traffic off the API.",
+        "A website for The Lionhearts, my World of Warcraft guild on Darkmoon Faire (EU). Built with Nuxt 4 (Vue 3 + Vite) and TypeScript.",
       status: ProjectStatus.InProgress,
       url: "https://dev.thelionhearts.eu/",
     },
     {
       name: "Weather Forecast",
       description:
-        "My first self-initiated Python project, a Flask web app that fetches live weather data, with plans to use the Claude API to suggest what to wear based on the forecast. I’m using it to learn Python and Flask, writing the code myself rather than generating it. Work in progress.",
+        "My first self-initiated Python project, a Flask web app that fetches live weather data, with plans to use the Claude API to suggest what to wear based on the forecast. I’m using it to learn Python and Flask, writing the code myself rather than generating it.",
       status: ProjectStatus.InProgress,
       github: "https://github.com/AnnikenJE/weather-forecast",
     },
