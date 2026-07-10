@@ -12,20 +12,20 @@ const AboutPage = () => {
 
       <section className="about-section">
         <article className="about-article reveal" style={order(1)}>
-          <h2>Who am I?</h2>
+          <h2>Background</h2>
           <p>
-            I’m Anniken, a developer who recently graduated with a Bachelor’s in
-            Frontend and Mobile Development. I build apps for web and mobile,
-            and I’m growing my backend skills, currently working in Python and
-            Flask.
+            I’m a developer with a recent Bachelor’s in Frontend and Mobile
+            Development. I build applications for web and mobile, and I’m
+            actively expanding into backend development, currently with Python
+            and Flask.
           </p>
 
           <p>
-            I started my studies focused on interactive design, then shifted to
-            programming the first time I tried it. It stuck.
+            I began my studies in interactive design and moved into programming
+            the first time I tried it. It’s been my focus ever since.
           </p>
 
-          <p>The work I like best is the work I don’t fully understand yet.</p>
+          <p>I’m drawn to problems that push me beyond what I already know.</p>
         </article>
 
         <article className="about-article">
@@ -34,7 +34,7 @@ const AboutPage = () => {
           </h2>
           <p className="reveal" style={order(3)}>
             <span className="highlight-txt">Frontend & Web:</span> React,
-            TypeScript, Vue, Nuxt, Vite, CSS
+            TypeScript, Vite, CSS
           </p>
           <p className="reveal" style={order(4)}>
             <span className="highlight-txt">Mobile:</span> React Native, Kotlin
@@ -42,7 +42,7 @@ const AboutPage = () => {
           </p>
           <p className="reveal" style={order(5)}>
             <span className="highlight-txt">Backend & Languages:</span> Python,
-            Flask, C#, .NET, Java, SQL, Firebase
+            C#, .NET, Java, SQL, Firebase
           </p>
           <p className="reveal" style={order(6)}>
             <span className="highlight-txt">Tools & Other:</span> Git, Unity,
@@ -53,29 +53,25 @@ const AboutPage = () => {
         <article className="about-article reveal" style={order(7)}>
           <h2>What’s next</h2>
           <p>
-            I’m deepening my backend skills. Python and Flask now, C next,
-            starting with a terminal Snake game to get hands-on with manual
-            memory, pointers, and a real-time game loop.
+            I’m deepening my backend skills. Python and Flask now, with C next.
+            I’m starting with a terminal Snake game to work directly with manual
+            memory management, pointers, and a real-time game loop.
           </p>
           <p>
-            I’m also experimenting with AI tooling, Claude Code and GitHub
-            Copilot, to see where it helps and where it gets in the way. I keep
-            writing code by hand alongside it, so my own skills stay sharp.
-          </p>
-
-          <p>
-            I’m always up for connecting with people building interesting
-            things.
+            I’m also evaluating AI tooling like Claude Code and GitHub Copilot
+            to understand where it adds value and where it gets in the way. I
+            continue writing code by hand alongside it to keep my fundamentals
+            strong.
           </p>
         </article>
 
         <article className="about-article reveal" style={order(8)}>
           <h2>This Website</h2>
           <p>
-            This site is an ongoing personal project. It’s a place to
-            experiment, learn, and share what I’m working on.
+            This site is an ongoing personal project, a place to experiment,
+            learn, and share what I’m working on. It may look a little different
+            next time you visit.
           </p>
-          <p>It might look a little different next time you stop by. (★‿★)</p>
         </article>
       </section>
     </main>
