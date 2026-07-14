@@ -33,8 +33,3 @@ src/
   utils/        Small helpers — reveal (page-entry stagger), accent (per-visit color)
   main.css      Global styles, design tokens, and shared motion
 ```
-
-Content fades and rises into place on each page load via a single shared
-`.reveal` class, and it honors `prefers-reduced-motion`. The accent color is
-picked at random on each visit, so the site looks a little different every time
-you stop by.
