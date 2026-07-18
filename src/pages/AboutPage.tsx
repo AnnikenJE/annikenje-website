@@ -58,10 +58,9 @@ const AboutPage = () => {
             memory management, pointers, and a real-time game loop.
           </p>
           <p>
-            I’m also evaluating AI tooling like Claude Code and GitHub Copilot
-            to understand where it adds value and where it gets in the way. I
-            continue writing code by hand alongside it to keep my fundamentals
-            strong.
+            I’m also experimenting with AI-assisted development, tools like
+            Claude Code and GitHub Copilot. I continue writing code by hand as
+            well to keep my fundamentals strong.
           </p>
         </article>
 
