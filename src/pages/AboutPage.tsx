@@ -23,6 +23,11 @@ const AboutPage = () => {
             when I tried it. I enjoy solving problems, and that’s probably why I
             was drawn to programming.
           </p>
+
+          <p>
+            I just finished my summer internship, and I´m currently looking
+            for a job.
+          </p>
         </article>
 
         <article className="about-article">
@@ -49,45 +54,16 @@ const AboutPage = () => {
             <span className="highlight-txt">Tools & Practices:</span> Git,
             Figma, Unity, GitHub Copilot, Claude, Scrum, Kanban
           </p>
+
         </article>
 
         <article className="about-article reveal" style={order(8)}>
           <h2>What’s next</h2>
           <p>
-            I just finished my summer internship, and now Im currently looking
-            for a job. I´m also deepening my backend skills with Python and
-            Flask. First off I will finish my ongoing projects before I contiue
-            new ones. But I really want to make a rat "tamagotchi" style game
-            with raspberry PI some day..
-          </p>
-        </article>
-
-        <article className="about-article reveal" style={order(9)}>
-          <h2>On AI</h2>
-
-          <p>
-            Most of my repos are written without AI assistance, and each repo’s
-            README states whether and how AI was used. I also use Claude for
-            commit messages and to help write documentation.
-          </p>
-
-          <p>
-            During my internship, I worked hands-on with AI coding agents, using
-            skills and MCP servers.
-          </p>
-
-          <p>
-            I also have a project that’s 100% AI-built using Claude Code:{" "}
-            <a
-              href="https://github.com/AnnikenJE/the-lionhearts-website"
-              target="_blank"
-              rel="noreferrer"
-              className="text-link"
-            >
-              The{" "}Lionhearts
-              <span className="visually-hidden"> (opens in a new tab)</span>
-            </a>
-            , a World of Warcraft guild website.
+            I´m currently deepening my backend skills with Python and Flask. I´m
+            also working on a website for my World of Warcraft guild.
+            At some point really want to make a rat "tamagotchi" style game with
+            raspberry PI.
           </p>
         </article>
 
