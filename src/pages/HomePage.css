@@ -1,5 +1,4 @@
-/* svh, not dvh: sized against the viewport with browser chrome expanded, so
-   the hero never gets clipped and doesn't reflow as the URL bar hides. */
+
 .home-main {
   display: flex;
   align-items: center;

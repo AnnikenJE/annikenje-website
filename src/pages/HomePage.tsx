@@ -15,8 +15,8 @@ const HomePage = () => {
           </h2>
 
           <p className="reveal" style={order(2)}>
-            A recently graduated developer with a Bachelor’s degree in Frontend
-            and Mobile Development.
+            A fullstack and mobile developer, with a Bachelor’s degree in
+            Frontend and Mobile Development.
           </p>
           <p className="reveal" style={order(3)}>
             Feel free to check out my{" "}

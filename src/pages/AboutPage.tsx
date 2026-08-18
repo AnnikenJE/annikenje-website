@@ -14,18 +14,15 @@ const AboutPage = () => {
         <article className="about-article reveal" style={order(1)}>
           <h2>Background</h2>
           <p>
-            I’m a developer with a recent Bachelor’s in Frontend and Mobile
-            Development. I build applications for web and mobile, and I’m
-            actively expanding into backend development, currently with Python
-            and Flask.
+            I’m a fullstack developer based in Norway, with a Bachelor in
+            Frontend and Mobile Development.
           </p>
 
           <p>
             I began my studies in interactive design and moved into programming
-            the first time I tried it. It’s been my focus ever since.
+            when I tried it. I enjoy solving problems, and that’s probably why I
+            was drawn to programming.
           </p>
-
-          <p>I’m drawn to problems that push me beyond what I already know.</p>
         </article>
 
         <article className="about-article">
@@ -33,38 +30,68 @@ const AboutPage = () => {
             Skills
           </h2>
           <p className="reveal" style={order(3)}>
-            <span className="highlight-txt">Frontend & Web:</span> React,
-            TypeScript, Vite, CSS
+            <span className="highlight-txt">Languages:</span> TypeScript,
+            Python, Kotlin, Swift, Java, C#, C
           </p>
           <p className="reveal" style={order(4)}>
-            <span className="highlight-txt">Mobile:</span> React Native, Kotlin
-            (Jetpack Compose), Swift (SwiftUI)
+            <span className="highlight-txt">Frontend:</span> React, Next.js,
+            Vite, Tailwind CSS, shadcn/ui, Bootstrap
           </p>
           <p className="reveal" style={order(5)}>
-            <span className="highlight-txt">Backend & Languages:</span> Python,
-            C#, .NET, Java, SQL, Firebase
+            <span className="highlight-txt">Mobile:</span> React Native, Jetpack
+            Compose, SwiftUI
           </p>
           <p className="reveal" style={order(6)}>
-            <span className="highlight-txt">Tools & Other:</span> Git, Unity,
-            Figma, Scrum
+            <span className="highlight-txt">Backend & Data:</span> Node.js,
+            Hono, .NET, SQL, Firebase
           </p>
-        </article>
-
-        <article className="about-article reveal" style={order(7)}>
-          <h2>What’s next</h2>
-          <p>
-            I’m deepening my backend skills. Python and Flask now, with C next.
-            I’m starting with a terminal Snake game to work directly with manual
-            memory management, pointers, and a real-time game loop.
-          </p>
-          <p>
-            I’m also experimenting with AI-assisted development, tools like
-            Claude Code and GitHub Copilot. I continue writing code by hand as
-            well to keep my fundamentals strong.
+          <p className="reveal" style={order(7)}>
+            <span className="highlight-txt">Tools & Practices:</span> Git,
+            Figma, Unity, GitHub Copilot, Claude, Scrum, Kanban
           </p>
         </article>
 
         <article className="about-article reveal" style={order(8)}>
+          <h2>What’s next</h2>
+          <p>
+            I just finished my summer internship, and now Im currently looking
+            for a job. I´m also deepening my backend skills with Python and
+            Flask. First off I will finish my ongoing projects before I contiue
+            new ones. But I really want to make a rat "tamagotchi" style game
+            with raspberry PI some day..
+          </p>
+        </article>
+
+        <article className="about-article reveal" style={order(9)}>
+          <h2>On AI</h2>
+
+          <p>
+            Most of my repos are written without AI assistance, and each repo’s
+            README states whether and how AI was used. I also use Claude for
+            commit messages and to help write documentation.
+          </p>
+
+          <p>
+            During my internship, I worked hands-on with AI coding agents, using
+            skills and MCP servers.
+          </p>
+
+          <p>
+            I also have a project that’s 100% AI-built using Claude Code:{" "}
+            <a
+              href="https://github.com/AnnikenJE/the-lionhearts-website"
+              target="_blank"
+              rel="noreferrer"
+              className="text-link"
+            >
+              The{" "}Lionhearts
+              <span className="visually-hidden"> (opens in a new tab)</span>
+            </a>
+            , a World of Warcraft guild website.
+          </p>
+        </article>
+
+        <article className="about-article reveal" style={order(10)}>
           <h2>This Website</h2>
           <p>
             This site is an ongoing personal project, a place to experiment,
