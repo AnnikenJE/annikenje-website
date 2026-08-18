@@ -1,10 +1,14 @@
-# annikenje.no
+# My personal website
 
-Personal portfolio for Anniken — live at **[annikenje.no](https://annikenje.no)**.
+Personal portfolio for Anniken, live at **[annikenje.no](https://annikenje.no)**.
 
 Built with React 19, TypeScript, and Vite. Client-side routing via React Router v7.
 
 Amazing stack for a portfolio :)
+
+## On AI
+Mostly handwritten code. Experimenting with CSS animations using Claude Code for fun.
+Commits and and some documentation are done with Claude Code.
 
 ## Getting started
 
