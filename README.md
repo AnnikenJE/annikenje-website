@@ -6,10 +6,6 @@ Built with React 19, TypeScript, and Vite. Client-side routing via React Router 
 
 Amazing stack for a portfolio :)
 
-## On AI
-Mostly handwritten code. Experimenting with CSS animations using Claude Code for fun.
-Commits and and some documentation are done with Claude Code.
-
 ## Getting started
 
 ```bash
