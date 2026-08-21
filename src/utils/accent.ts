@@ -8,6 +8,7 @@ const ACCENTS = [
   "#9ed9c8", // mint
   "#e8c39e", // peach
   "#d9b39e", // sand
+  "#c8d99e", // sage
 ];
 
 const STORAGE_KEY = "accent";
