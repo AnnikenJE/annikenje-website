@@ -1,6 +1,6 @@
 export const ProjectStatus = {
   InProgress: "In progress",
-  AlwaysEvolving: "Always evolving",
+  Live: "Live sites",
   Completed: "Completed",
   Planned: "Planned",
 } as const;
@@ -14,4 +14,5 @@ export interface IProjectItem {
   status: ProjectStatus;
   github?: string;
   url?: string;
+  urlLabel?: string;
 }

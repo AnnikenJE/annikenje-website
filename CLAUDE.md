@@ -36,7 +36,7 @@ Personal portfolio website for Anniken Jørgensen Edvardsen — React 19 + TypeS
 
 **TypeScript:** Strict mode with `noUnusedLocals` and `noUnusedParameters` enforced — unused imports/variables will cause build errors.
 
-**Data model:** `src/interfaces/IProjectItem.ts` defines the `IProjectItem` interface and the `ProjectStatus` const object (`InProgress`, `AlwaysEvolving`, `Completed`, `Planned`). Each status's value doubles as its section heading; `ProjectList` renders one section per status, in the order declared in its `sections` array.
+**Data model:** `src/interfaces/IProjectItem.ts` defines the `IProjectItem` interface and the `ProjectStatus` const object (`InProgress`, `Live`, `Completed`, `Planned`). Each status's value doubles as its section heading; `ProjectList` renders one section per status, in the order declared in its `sections` array.
 
 **Social links:** `src/components/icons/socialLinks.ts` is the single source for GitHub/LinkedIn URLs + icons. `MainNavigation` maps over it for the nav icons; `HomePage` looks up the same entries to render inline text links.
 

@@ -10,6 +10,7 @@ const ProjectListItem: FC<IProjectItem> = ({
   description,
   github,
   url,
+  urlLabel = "Visit site",
 }) => {
   return (
     <article className="project-item">
@@ -23,9 +24,9 @@ const ProjectListItem: FC<IProjectItem> = ({
               target="_blank"
               rel="noreferrer"
               className="project-item__link"
-              aria-label={`Visit ${name} (opens in a new tab)`}
+              aria-label={`${urlLabel}: ${name} (opens in a new tab)`}
             >
-              <FontAwesomeIcon icon={faArrowUpRightFromSquare} /> Visit site
+              <FontAwesomeIcon icon={faArrowUpRightFromSquare} /> {urlLabel}
             </a>
           )}
           {github && (

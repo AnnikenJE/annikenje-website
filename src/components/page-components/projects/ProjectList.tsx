@@ -15,14 +15,16 @@ const ProjectList = () => {
       name: "Portfolio",
       description:
         "My personal portfolio, the site you are on now, built with React 19, TypeScript, and Vite with client-side routing via React Router v7.",
-      status: ProjectStatus.AlwaysEvolving,
+      status: ProjectStatus.Live,
       github: "https://github.com/AnnikenJE/annikenje-website",
+      url: "https://www.annikenje.no/",
+      urlLabel: "Visit site again",
     },
     {
       name: "The Lionhearts Website",
       description:
         "A guild website for The Lionhearts, my World of Warcraft guild on Darkmoon Faire (EU). Built with Nuxt 4 (Vue 3 + Vite), TypeScript, and Nitro server routes.",
-      status: ProjectStatus.InProgress,
+      status: ProjectStatus.Live,
       github: "https://github.com/AnnikenJE/the-lionhearts-website",
       url: "https://thelionhearts.eu/",
     },
@@ -91,7 +93,7 @@ const ProjectList = () => {
   ];
 
   const sections: ProjectStatus[] = [
-    ProjectStatus.AlwaysEvolving,
+    ProjectStatus.Live,
     ProjectStatus.InProgress,
     ProjectStatus.Completed,
     ProjectStatus.Planned,
