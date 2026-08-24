@@ -13,6 +13,11 @@ const MainNavigation = () => {
       </div>
       <ul className="main-navigation__list">
         <li className="nav-item__wrapper">
+          <NavLink to="/" end className="main-navigation__item">
+            Home
+          </NavLink>
+        </li>
+        <li className="nav-item__wrapper">
           <NavLink to="/about" className="main-navigation__item">
             About
           </NavLink>
