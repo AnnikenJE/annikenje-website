@@ -3,14 +3,21 @@
       Main colors
   */
 
-  --main-color: #d99ec8;
-  --txt-color: #f2e2f7;
+  /* Sakura Cherry Blossoms palette:
+     #541f1f  #901f3b  #bf8065  #ff92c4  #fbb7dd 
+     
+     https://www.color-hex.com/color-palette/18061
+     
+     */
 
-  --background-color: #0e0e0e;
-  --secondary-background-color: #300943;
+  --main-color: #ff92c4;
+  --txt-color: #f7dfe9;
+
+  --background-color: #140a0e;
+  --secondary-background-color: #541f1f;
 
   --link-color: var(--main-color);
-  --link-hover: color-mix(in srgb, var(--main-color) 45%, white);
+  --link-hover: #fbb7dd;
 
   /*
       Fonts
@@ -32,7 +39,7 @@
       Shadows
   */
 
-  --txt-shadow: 2px 2px 3px rgba(143, 108, 217, 0.1);
+  --txt-shadow: 2px 2px 3px rgba(144, 31, 59, 0.25);
 }
 
 /*
