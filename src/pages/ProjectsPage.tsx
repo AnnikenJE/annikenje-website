@@ -14,12 +14,6 @@ const ProjectsPage = () => {
         </article>
       </section>
       <ProjectList />
-      <section>
-        <p className="projects-note reveal" style={order(2)}>
-          A few more repos and projects are kept private for now. I’ll share
-          them here as they’re ready.
-        </p>
-      </section>
     </main>
   );
 };

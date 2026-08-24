@@ -19,16 +19,14 @@
   --main-font: "Work Sans", sans-serif;
   --font-weight: 400;
   --letter-spacing: 2px;
-  /* Heavier than the old 200 so the thin pink headings stay legible on black */
   --heading-weight: 350;
-  /* Large hero titles read fine thin at their size — keep them delicate */
   --display-weight: 200;
 
   /*
       Layout
   */
 
-  --content-width: 680px;
+  --content-width: 820px;
 
   /*
       Shadows
@@ -36,6 +34,10 @@
 
   --txt-shadow: 2px 2px 3px rgba(143, 108, 217, 0.1);
 }
+
+/*
+    Content
+*/
 
 body {
   margin: 0;
@@ -50,11 +52,6 @@ body {
   font-weight: var(--font-weight);
 }
 
-/* Consistent side gutter so content never sits flush against the screen
-   edge on phones / narrow viewports. Harmless on desktop, where page
-   content is max-width capped and centered. The top padding keeps the
-   first heading clear of the header's fade band so the fade never sits
-   over the title. */
 main {
   padding-inline: 1.25rem;
   padding-top: 3.25rem;
@@ -66,15 +63,13 @@ html {
   scroll-padding-top: 8rem;
 }
 
-/* Comfortable rhythm for body copy — gentler letter-spacing than headings
-   so longer paragraphs stay easy to read */
 p {
   line-height: 1.7;
   letter-spacing: 0.3px;
 }
 
 /*
-    Heading system — one consistent scale and treatment across every page
+    Headings
 */
 
 h1,
@@ -96,8 +91,10 @@ h3 {
   font-size: 1.15rem;
 }
 
-/* Large hero / display titles — HELLO! and 404.
-   Alignment is left to the page layout, which already positions these. */
+/*
+    Layout
+*/
+
 .display-heading {
   margin: 0;
   font-weight: var(--display-weight);
@@ -105,7 +102,6 @@ h3 {
   font-size: 5.5rem;
 }
 
-/* Standard page titles — About, Projects */
 .page-title {
   margin: 0 0 2rem;
   font-weight: var(--heading-weight);
@@ -114,32 +110,14 @@ h3 {
   text-align: center;
 }
 
-@media (width < 768px) {
-  .display-heading {
-    font-size: 2.75rem;
-  }
-
-  .page-title {
-    font-size: 2rem;
-  }
-}
-
 .highlight-txt {
   color: var(--main-color);
 }
 
 /*
-    Motion vocabulary
-    -----------------
-    Content rises and fades in when a page mounts (and on every route change,
-    since React Router remounts the page). One shared class used across pages
-    so the whole site moves the same way. Stagger order is set per element via
-    the `--i` custom property: animation-delay = --i * 80ms.
-
-    Reduced motion: the global prefers-reduced-motion block below forces the
-    animation to finish instantly, so these elements land at their visible end
-    state (opacity 1) with no movement.
+    Motion
 */
+
 .reveal {
   animation: rise 0.7s cubic-bezier(0.2, 0.6, 0.2, 1) both;
   animation-delay: calc(var(--i, 0) * 80ms);
@@ -160,7 +138,6 @@ h3 {
     Accessibility
 */
 
-/* Visible keyboard focus indicator for all interactive elements */
 :focus-visible {
   outline: 3px solid var(--link-hover);
   outline-offset: 3px;
@@ -173,7 +150,6 @@ h3 {
   outline: none;
 }
 
-/* Inline links inside body text — underlined so they don't rely on color alone */
 .text-link {
   color: var(--link-color);
   text-decoration: underline;
@@ -185,7 +161,6 @@ h3 {
   color: var(--link-hover);
 }
 
-/* Visually hide content while keeping it available to screen readers */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -214,6 +189,20 @@ h3 {
 
 .skip-link:focus {
   top: 1rem;
+}
+
+/*
+    Resolutions
+*/
+
+@media (width < 768px) {
+  .display-heading {
+    font-size: 2.75rem;
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
 }
 
 /* Respect users who prefer reduced motion */

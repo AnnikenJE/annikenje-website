@@ -19,75 +19,77 @@ const ProjectList = () => {
       github: "https://github.com/AnnikenJE/annikenje-website",
     },
     {
-      name: "The Lionhearts",
+      name: "The Lionhearts Website",
       description:
-        "A website for The Lionhearts, my World of Warcraft guild on Darkmoon Faire (EU). Built with Nuxt 4 (Vue 3 + Vite) and TypeScript.",
+        "A guild website for The Lionhearts, my World of Warcraft guild on Darkmoon Faire (EU). Built with Nuxt 4 (Vue 3 + Vite), TypeScript, and Nitro server routes.",
       status: ProjectStatus.InProgress,
-      url: "https://dev.thelionhearts.eu/",
+      github: "https://github.com/AnnikenJE/the-lionhearts-website",
+      url: "https://thelionhearts.eu/",
     },
     {
       name: "Weather Forecast",
       description:
-        "My first self-initiated Python project, a Flask web app that fetches live weather data, with plans to use the Claude API to suggest what to wear based on the forecast.",
+        "My first self-initiated Python project, a Flask web app that fetches live weather data via the Open-Meteo API and uses the Claude API to suggest what to wear based on the forecast.",
       status: ProjectStatus.InProgress,
       github: "https://github.com/AnnikenJE/weather-forecast",
     },
     {
       name: "TrumpVerse",
       description:
-        "A fullstack web app with a React + TypeScript frontend and a .NET/C# Web API backed by SQLite. Full CRUD, image uploads, and API documentation, with seamless frontend–backend interaction. Web Development exam project. Case provided by the school.",
+        "A fullstack merchandise catalogue with full CRUD, image uploads, and search. React + TypeScript frontend on Vite, ASP.NET Core 8 Web API backend with Entity Framework Core and SQLite. Web Development exam project. Case provided by the school.",
       status: ProjectStatus.Completed,
-      github: "https://github.com/AnnikenJE/exam-webdevelopment-2024",
+      github: "https://github.com/AnnikenJE/trump-verse",
     },
     {
-      name: "Rick & Morty Android App",
+      name: "Rick and Morty Android",
       description:
-        "An Android app built with Kotlin and Jetpack Compose that browses characters from the Rick and Morty API, stores your own custom characters locally, and navigates across multiple screens with proper error handling and user feedback. Android Programming exam project.",
+        "An Android app built with Kotlin and Jetpack Compose (MVVM) that browses characters from the Rick and Morty API, lets you design and save custom characters locally with Room, and includes a \"Surprise me\" random-character feature. Android Programming exam project.",
       status: ProjectStatus.Completed,
-      github: "https://github.com/AnnikenJE/exam-android-development-2024",
+      github: "https://github.com/AnnikenJE/rick-and-morty-android",
     },
     {
-      name: "Python Fundamentals",
+      name: "Python Tasks",
       description:
         "A Python 3.12 project covering fundamentals across four tasks: a word-guessing game, a class-based library management system, a menu-driven bank account system, and a palindrome checker. Python Programming exam project.",
       status: ProjectStatus.Completed,
-      github: "https://github.com/AnnikenJE/exam-python-programming-2025",
+      github: "https://github.com/AnnikenJE/python-tasks",
     },
     {
       name: "DugnadHub",
       description:
-        "A cross-platform app for organizing and coordinating volunteer activities (dugnader): create, browse, and join dugnader in a structured, user-friendly way. Built with React Native, TypeScript, and Firebase, running on iOS and web, with Google and email/password sign-in and Firebase handling auth, database, and image storage. Cross-Platform Development exam project.",
+        "A cross-platform app for organizing and coordinating volunteer activities (dugnader): create, browse, and join dugnader in a structured, user-friendly way. Built with React Native, Expo Router, TypeScript, and Firebase (auth, Firestore, storage), with Google and email/password sign-in. Cross-Platform Development exam project.",
       status: ProjectStatus.Completed,
-      github: "https://github.com/AnnikenJE/exam-crossplatform-2025",
+      github: "https://github.com/AnnikenJE/dugnad-hub",
     },
     {
       name: "Beacon",
       description:
-        "A map-based SwiftUI app combining map interaction, location search via the Geoapify Places API, and local data storage in a clean, user-friendly design. Built with Swift and SwiftUI. iOS Programming exam project.",
+        "A SwiftUI iOS app for discovering nearby restaurants, cafés, and hotels via the Geoapify Places API, with map and list views, category/radius filtering, and a five-star rating system stored locally with SwiftData. Built with Swift, MapKit, and CoreLocation. iOS Programming exam project.",
       status: ProjectStatus.Completed,
-      github: "https://github.com/AnnikenJE/exam-ios-programming-2025",
+      github: "https://github.com/AnnikenJE/beacon",
     },
     {
       name: "Armies of Zondor",
       description:
-        "A medieval army management web app (built with rats instead of soldiers) across three screens: a resource shop for buying warriors, animals, and war machines; resource gathering with randomized outcomes; and an overview of your army and resources. Built with HTML, CSS, and vanilla JavaScript. Web Development coursework.",
+        "A medieval army management web app (built with rats instead of soldiers) across three screens: a resource shop for buying warriors, animals, and war machines; resource gathering with randomized outcomes; and an overview of your army and resources. Built with HTML, CSS, and vanilla JavaScript, zero dependencies. Web Development exam project.",
       status: ProjectStatus.Completed,
-      github: "https://github.com/AnnikenJE/assignment-webdevelopment-2024",
+      github: "https://github.com/AnnikenJE/armies-of-zondor",
     },
     {
-      name: "Pet game",
-      description: "A Tamagotchi-style virtual pet game.",
-      status: ProjectStatus.Planned,
-    },
-    {
-      name: "Snake (C)",
+      name: "Ghost Woods",
       description:
-        "A terminal Snake game written in C with ncurses, to strengthen my C skills: manual memory, pointers, and a real-time game loop.",
+        "A survival shooter built in Unity with C# where you collect objects scattered through a forest to escape before the ghosts catch you. More details and a video coming soon.",
+      status: ProjectStatus.Completed,
+    },
+    {
+      name: "Rat",
+      description:
+        "A Tamagotchi-style virtual pet rat.",
       status: ProjectStatus.Planned,
+      github: "https://github.com/AnnikenJE/rat",
     },
   ];
 
-  // Display order of the status sections; each status doubles as its heading.
   const sections: ProjectStatus[] = [
     ProjectStatus.AlwaysEvolving,
     ProjectStatus.InProgress,

@@ -56,8 +56,12 @@
   flex-direction: row;
 }
 
+.social-item__wrapper .main-navigation__item {
+  font-size: 1.5rem;
+}
+
 /*
-   Links
+    Links
 */
 
 .logo:visited {
@@ -81,7 +85,7 @@
 }
 
 /*
-    Resolution
+    Resolutions
 */
 
 @media (width < 768px) {

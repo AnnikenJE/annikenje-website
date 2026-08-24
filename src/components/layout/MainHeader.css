@@ -5,8 +5,7 @@
   background-color: var(--background-color);
 }
 
-/* Soft fade below the header so body text dissolves out as it scrolls
-   under the bar, instead of being clipped at a hard horizontal edge */
+/* Soft fade below the header */
 .main-header::after {
   content: "";
   position: absolute;
