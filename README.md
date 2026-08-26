@@ -29,7 +29,7 @@ src/
   components/   Layout, navigation, icons, and project page-components
   interfaces/   Shared TypeScript types (e.g. IProjectItem)
   pages/        HomePage, AboutPage, ProjectsPage, NotFoundPage
-  routing/      AppRouting — route definitions, nested under MainLayout
-  utils/        Small helpers — reveal (page-entry stagger)
+  routing/      AppRouting: route definitions, nested under MainLayout
+  utils/        Small helpers: reveal (page-entry stagger)
   main.css      Global styles, design tokens, and shared motion
 ```

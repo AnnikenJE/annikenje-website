@@ -14,8 +14,8 @@ const AboutPage = () => {
         <article className="about-article reveal" style={order(1)}>
           <h2>Background</h2>
           <p>
-            I’m a fullstack developer based in Norway, with a Bachelor in
-            Frontend and Mobile Development.
+            I’m a developer based in Norway, with a
+            Bachelor in Frontend and Mobile Development.
           </p>
 
           <p>

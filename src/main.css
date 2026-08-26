@@ -180,7 +180,7 @@ h3 {
   border: 0;
 }
 
-/* Skip link — lets keyboard users jump straight to the main content */
+/* Skip link: lets keyboard users jump straight to the main content */
 .skip-link {
   position: absolute;
   top: -4rem;
