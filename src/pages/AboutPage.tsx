@@ -36,23 +36,17 @@ const AboutPage = () => {
           </h2>
           <p className="reveal" style={order(3)}>
             <span className="highlight-txt">Languages:</span> TypeScript,
-            Python, Kotlin, Swift, Java, C#, C
+            Python, Kotlin, Swift, C#, SQL, Java, C
           </p>
           <p className="reveal" style={order(4)}>
-            <span className="highlight-txt">Frontend:</span> React, Next.js,
-            Vite, Tailwind CSS, shadcn/ui, Bootstrap
+            <span className="highlight-txt">Frameworks & Libraries:</span> React,
+            .NET, React Native, Jetpack Compose, SwiftUI, Hono, Bootstrap,
+            Next.js, Tailwind CSS, shadcn/ui
           </p>
           <p className="reveal" style={order(5)}>
-            <span className="highlight-txt">Mobile:</span> React Native, Jetpack
-            Compose, SwiftUI
-          </p>
-          <p className="reveal" style={order(6)}>
-            <span className="highlight-txt">Backend & Data:</span> Node.js,
-            Hono, .NET, SQL, Firebase
-          </p>
-          <p className="reveal" style={order(7)}>
             <span className="highlight-txt">Tools & Practices:</span> Git,
-            Figma, Unity, GitHub Copilot, Claude, Scrum, Kanban
+            Firebase, Claude Code, GitHub Copilot, Universal design, Scrum,
+            Kanban, Unity, Vite, Figma
           </p>
 
         </article>
