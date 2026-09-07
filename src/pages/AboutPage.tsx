@@ -36,7 +36,7 @@ const AboutPage = () => {
           </h2>
           <p className="reveal" style={order(3)}>
             <span className="highlight-txt">Languages:</span> TypeScript,
-            Python, Kotlin, Swift, C#, SQL, Java, C
+            Python, Kotlin, Swift, C#, SQL, Java, C, HTML, CSS
           </p>
           <p className="reveal" style={order(4)}>
             <span className="highlight-txt">Frameworks & Libraries:</span> React,
